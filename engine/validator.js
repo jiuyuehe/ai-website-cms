@@ -46,6 +46,24 @@ function collectAssetPaths(site, home, pricing, collections) {
     add(media.video, `${source}.video`);
     add(media.poster, `${source}.poster`);
   };
+  const addImage = (image, source) => {
+    if (!image || typeof image !== 'object') return;
+    add(image.src, `${source}.src`);
+    add(image.mobileSrc, `${source}.mobileSrc`);
+  };
+  const collectItemImages = (item, source) => {
+    if (!item || typeof item !== 'object') return;
+    if (item.type === 'image') addImage(item, source);
+    else if (item.type === 'card') addImage(item.image, `${source}.image`);
+  };
+  const collectBlockImages = (block, source) => {
+    if (!block || typeof block !== 'object') return;
+    if (block.type === 'image') addImage(block, source);
+    else if (block.type === 'image-grid') for (const [index, image] of (block.items || []).entries()) addImage(image, `${source}.items[${index}]`);
+    else if (block.type === 'grid') for (const [index, item] of (block.items || []).entries()) collectItemImages(item, `${source}.items[${index}]`);
+    else if (block.type === 'two-column') for (const [colIndex, col] of (block.columns || []).entries()) for (const [index, item] of col.entries()) collectItemImages(item, `${source}.columns[${colIndex}][${index}]`);
+    else if (block.type === 'carousel') for (const [index, item] of (block.items || []).entries()) addImage(item.image, `${source}.items[${index}].image`);
+  };
   add(site.logo?.src, 'site.logo.src');
   add(site.favicon, 'site.favicon');
   add(site.seo?.image, 'site.seo.image');
@@ -54,15 +72,17 @@ function collectAssetPaths(site, home, pricing, collections) {
   add(pricing?.seo?.image, 'pricing.seo.image');
   for (const [index, slide] of (home.hero?.slides || []).entries()) addMedia(slide.media, `home.hero.slides[${index}].media`);
   for (const item of collections.products) {
-    add(item.data.cover?.src, `${item.filePath}:cover.src`);
-    add(item.data.mobileCover?.src, `${item.filePath}:mobileCover.src`);
-    for (const [index, image] of (item.data.gallery || []).entries()) add(image.src, `${item.filePath}:gallery[${index}].src`);
+    addImage(item.data.cover, `${item.filePath}:cover`);
+    addImage(item.data.mobileCover, `${item.filePath}:mobileCover`);
+    for (const [index, image] of (item.data.gallery || []).entries()) addImage(image, `${item.filePath}:gallery[${index}]`);
+    for (const section of ['features', 'advantages', 'scenarios']) for (const [index, entry] of (item.data.content?.[section] || []).entries()) addImage(entry.image, `${item.filePath}:content.${section}[${index}].image`);
     add(item.data.seo?.image, `${item.filePath}:seo.image`);
   }
   for (const item of collections.cases) { add(item.data.cover?.src, `${item.filePath}:cover.src`); add(item.data.seo?.image, `${item.filePath}:seo.image`); }
   for (const item of collections.news) {
-    add(item.data.cover?.src, `${item.filePath}:cover.src`); add(item.data.seo?.image, `${item.filePath}:seo.image`);
-    for (const block of item.data.blocks || []) if (block.type === 'image') add(block.src, `${item.filePath}:blocks.image`);
+    addImage(item.data.cover, `${item.filePath}:cover`);
+    add(item.data.seo?.image, `${item.filePath}:seo.image`);
+    for (const [index, block] of (item.data.blocks || []).entries()) collectBlockImages(block, `${item.filePath}:blocks[${index}]`);
   }
   for (const item of collections.downloads) add(item.data.file, `${item.filePath}:file`);
   return assets;

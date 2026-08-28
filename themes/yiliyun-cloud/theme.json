@@ -26,8 +26,8 @@
     "notFound": "pages/not-found.hbs"
   },
   "assets": {
-    "styles": ["css/site.css"],
-    "scripts": []
+    "styles": ["css/site.css", "css/layouts.css"],
+    "scripts": ["js/carousel.js"]
   },
   "requiredHelpers": ["assetUrl", "date", "icon", "jsonLd", "renderBlocks", "seoHead"]
 }

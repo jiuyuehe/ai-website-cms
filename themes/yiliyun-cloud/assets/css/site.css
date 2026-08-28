@@ -353,6 +353,8 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 .reading-copy { max-width: 65ch; margin: 0; font-size: 20px; line-height: 1.7; }
 .item-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; align-items: start; margin-top: 48px; border-top: 1px solid var(--line); }
 .item-block { align-self: start; min-height: 0; padding: 28px 28px 32px 0; border-bottom: 1px solid var(--line); }
+.item-media { margin: 0 0 20px; }
+.item-media img { display: block; width: 100%; border-radius: var(--radius-control); object-fit: cover; }
 .item-block + .item-block { padding-left: 28px; border-left: 1px solid var(--line); }
 .item-block h3, .scenario-grid h3, .plain-list h3, .story-grid h2 { margin: 20px 0 8px; font-size: 20px; line-height: 1.3; font-weight: 800; }
 .item-block p, .scenario-grid p, .plain-list p, .story-grid p { margin: 0; color: var(--muted); }

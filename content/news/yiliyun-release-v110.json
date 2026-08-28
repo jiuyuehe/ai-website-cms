@@ -9,12 +9,32 @@
   "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云 v1.1.0 版本发布：支持 S3 协议对象存储与性能提升"},
   "blocks": [
     {"type": "paragraph", "text": "一粒云 v1.1.0 正式发布。本次版本聚焦「存储扩展」与「批量性能」，让企业在选择底层存储时更灵活，也让大规模文件的日常操作更顺畅。"},
-    {"type": "heading", "level": 2, "text": "全面支持 S3 协议对象存储"},
-    {"type": "paragraph", "text": "v1.1.0 新增对标准 S3 协议对象存储的接入支持，开箱兼容腾讯云 COS、华为云 OBS 等主流对象存储服务。企业可以按业务场景、成本与合规要求灵活选择底层存储，既不影响现有使用，也为后续私有化与混合架构留出空间。"},
-    {"type": "list", "items": ["支持腾讯云 COS、华为云 OBS 等 S3 协议对象存储", "存储接入配置化，可平滑迁移与多存储管理", "为私有化部署与混合架构提供更灵活的存储选择"]},
-    {"type": "heading", "level": 2, "text": "UI 优化与批量能力提升"},
-    {"type": "paragraph", "text": "本次对界面交互进行了整体优化，让文件管理更直观；同时显著提升了上传、下载等批量操作的数量与性能，满足大批量文件的真实办公场景。"},
-    {"type": "list", "items": ["界面交互整体优化，操作路径更清晰", "上传、下载批量操作数量与性能大幅提升", "PC 端支持单次下载超过 20 万个文件"]},
+    {"type": "two-column", "layout": "text-media", "columns": [
+      [
+        {"type": "heading", "level": 2, "text": "全面支持 S3 协议对象存储"},
+        {"type": "paragraph", "text": "v1.1.0 新增对标准 S3 协议对象存储的接入支持，开箱兼容腾讯云 COS、华为云 OBS 等主流对象存储服务。企业可以按业务场景、成本与合规要求灵活选择底层存储，既不影响现有使用，也为后续私有化与混合架构留出空间。"},
+        {"type": "list", "items": ["支持腾讯云 COS、华为云 OBS 等 S3 协议对象存储", "存储接入配置化，可平滑迁移与多存储管理", "为私有化部署与混合架构提供更灵活的存储选择"]}
+      ],
+      [
+        {"type": "image", "src": "media/yiliyun/hero.png", "alt": "一粒云支持 S3 协议对象存储接入", "caption": "存储接入配置化，企业可灵活选择底层存储", "aspectRatio": "4:3"}
+      ]
+    ]},
+    {"type": "grid", "cols": 2, "items": [
+      {"type": "card", "badge": "UI 优化", "title": "界面交互整体优化", "body": "文件管理视图、操作路径与提示信息全面梳理，常用操作更直观、更好找。", "items": ["导航与文件夹层级更清晰", "操作反馈更及时"]},
+      {"type": "card", "badge": "性能提升", "title": "批量能力大幅增强", "body": "上传、下载批量操作的数量与性能显著提升，应对大规模文件的真实办公场景。", "items": ["批量上传 / 下载更稳定", "PC 端单次下载支持超 20 万个文件"]}
+    ]},
+    {"type": "heading", "level": 3, "text": "界面焕新一览"},
+    {"type": "image-grid", "cols": 3, "items": [
+      {"src": "media/news-knowledge.jpg", "alt": "文档在线预览", "caption": "在线预览更流畅"},
+      {"src": "media/product-customer-service.jpg", "alt": "企业空间管理", "caption": "空间管理更清晰"},
+      {"src": "media/case-retail.jpg", "alt": "团队协作界面", "caption": "协作入口更集中"}
+    ]},
+    {"type": "heading", "level": 3, "text": "新版本亮点"},
+    {"type": "carousel", "autoplay": 5000, "items": [
+      {"image": {"src": "media/yiliyun/hero.png", "alt": "一粒云 v1.1.0 主视觉"}, "title": "灵活的存储底座", "body": "兼容主流 S3 协议对象存储，存储选择权回归企业。"},
+      {"image": {"src": "media/hero.jpg", "alt": "企业文件协作场景"}, "title": "更稳的批量能力", "body": "从上传到下载，大规模文件操作更可靠、更快速。"},
+      {"image": {"src": "media/news-knowledge.jpg", "alt": "文档协作与知识沉淀"}, "title": "更好的协作体验", "body": "界面与交互整体焕新，团队协作路径更顺畅。"}
+    ]},
     {"type": "quote", "text": "从灵活的存储到更稳的批量能力，v1.1.0 让企业网盘在真实的大规模场景中更可靠。", "attribution": "一粒云产品团队"}
   ],
   "seo": {
