@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-security-manual",
+  "status": "published",
+  "title": "企业文件安全合规手册",
+  "description": "汇总企业文件权限管控、审计留痕与合规实践的要点，为数据治理与安全审计提供参考。",
+  "file": "downloads/yiliyun-security-manual.txt",
+  "updatedAt": "2026-08-04",
+  "productIds": ["yiliyun-permission", "yiliyun-audit", "yiliyun-share"]
+}

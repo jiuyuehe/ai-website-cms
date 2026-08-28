@@ -1,0 +1,7 @@
+{{> partials/page-head}}
+<body class="page-not-found">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main"><section class="not-found"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">页面未找到</span></nav><p class="dt-eyebrow dt-eyebrow-dark">404 / NOT FOUND</p><h1>这条路径暂时没有内容</h1><p>返回首页，或者从产品和现场开始继续浏览。</p><a class="dt-button" href="{{links.home}}">返回首页 {{{icon "arrow-left"}}}</a></div></section></main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

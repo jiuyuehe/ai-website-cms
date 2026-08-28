@@ -1,0 +1,17 @@
+{{> partials/page-head}}
+<body class="page-detail page-product-detail">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main">
+    <section class="detail-hero"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><a href="{{links.products}}">产品</a><span aria-hidden="true">/</span><span aria-current="page">{{page.item.title}}</span></nav><div class="detail-hero-grid"><div><p class="dt-eyebrow dt-eyebrow-dark">PRODUCT / FIELD READY</p><h1>{{page.item.title}}</h1><p class="lead">{{page.item.summary}}</p><a class="dt-button" href="{{links.contact}}">联系团队 {{{icon "arrow-up-right"}}}</a></div><figure class="detail-media"><img src="{{assetUrl page.item.cover.src}}" alt="{{page.item.cover.alt}}" width="1200" height="800" fetchpriority="high"></figure></div></div></section>
+    {{#if page.item.badges}}<div class="dt-container product-badges">{{#each page.item.badges}}<span>{{this}}</span>{{/each}}</div>{{/if}}
+    {{#if page.item.gallery}}<div class="dt-container vivo-product-gallery">{{#each page.item.gallery}}<img src="{{assetUrl src}}" alt="{{alt}}" loading="lazy" width="720" height="480">{{/each}}</div>{{/if}}
+    {{#if page.item.specifications}}<div class="dt-container vivo-spec-grid">{{#each page.item.specifications}}<div><dt>{{label}}</dt><dd>{{value}}</dd></div>{{/each}}</div>{{/if}}
+    <section class="dt-section"><div class="dt-container reading-grid"><div class="dt-section-heading"><p class="dt-eyebrow dt-eyebrow-dark">PRODUCT NOTE</p><h2>让微光在需要时成为清晰信息</h2></div><p class="reading-copy">{{page.item.content.intro}}</p></div></section>
+    <section class="dt-section section-muted"><div class="dt-container"><div class="dt-section-heading"><p class="dt-eyebrow dt-eyebrow-dark">CAPABILITIES</p><h2>核心能力</h2></div><div class="item-grid">{{#each page.item.content.features}}<article class="item-block"><span class="icon-box" aria-hidden="true">{{{icon icon}}}</span><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    <section class="dt-section"><div class="dt-container split-section"><div class="dt-section-heading"><p class="dt-eyebrow dt-eyebrow-dark">ADVANTAGES</p><h2>为长期现场使用而设计</h2></div><div class="plain-list">{{#each page.item.content.advantages}}<article><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    <section class="dt-section section-muted"><div class="dt-container"><div class="dt-section-heading"><p class="dt-eyebrow dt-eyebrow-dark">SCENARIOS</p><h2>适用场景</h2></div><div class="scenario-grid">{{#each page.item.content.scenarios}}<article><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    {{#if page.item.content.faq}}<section class="dt-section"><div class="dt-container reading-grid"><div class="dt-section-heading"><p class="dt-eyebrow dt-eyebrow-dark">FAQ</p><h2>常见问题</h2></div><div class="faq-list">{{#each page.item.content.faq}}<details><summary>{{question}}{{{icon "plus"}}}</summary><p>{{answer}}</p></details>{{/each}}</div></div></section>{{/if}}
+  </main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

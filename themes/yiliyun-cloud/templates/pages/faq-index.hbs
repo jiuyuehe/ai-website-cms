@@ -1,0 +1,5 @@
+{{> partials/page-head}}
+<body class="page-list page-faq">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">常见问题</span></nav><p class="eyebrow">常见问题</p><h1>先从最实际的问题开始</h1><p>如果这里没有回答你的问题，可以直接联系我们。</p></div></section><section class="section"><div class="container reading-grid"><div class="section-heading"><p class="eyebrow">快速查找</p><h2>常见问题</h2></div><div class="faq-list">{{#each page.items}}<details><summary>{{question}}{{{icon "plus"}}}</summary><p>{{answer}}</p></details>{{/each}}</div></div></section></main>
+  {{> partials/footer}}{{> partials/page-foot}}

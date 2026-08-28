@@ -1,0 +1,7 @@
+{{> partials/page-head}}
+<body class="page-list page-cases">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">场景</span></nav><p class="dt-eyebrow dt-eyebrow-dark">SCENARIOS / 03</p><h1>让现场看见下一步</h1><p>面向巡检、搜救、消防和海上作业等需要快速确认的环境。</p></div></section><section class="dt-section"><div class="dt-container dt-product-grid">{{#each page.items}}{{> partials/case-card}}{{/each}}</div></section></main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

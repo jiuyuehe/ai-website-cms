@@ -1,0 +1,5 @@
+{{> partials/page-head}}
+<body class="page-list page-news">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">新闻</span></nav><p class="eyebrow">新闻</p><h1>记录正在发生的工作</h1><p>关于知识运营、服务流程和企业 AI 的实践观察。</p></div></section><section class="section"><div class="container news-list news-list-large">{{#each page.items}}<a class="news-row" href="{{href}}"><time datetime="{{publishedAt}}">{{date publishedAt}}</time><strong>{{title}}</strong><span>{{summary}}</span><span class="news-arrow">{{{icon "arrow-up-right"}}}</span></a>{{/each}}</div></section></main>
+  {{> partials/footer}}{{> partials/page-foot}}

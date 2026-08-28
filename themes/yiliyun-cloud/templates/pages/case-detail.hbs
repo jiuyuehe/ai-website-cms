@@ -1,0 +1,9 @@
+{{> partials/page-head}}
+<body class="page-detail page-case-detail">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="detail-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><a href="{{links.cases}}">应用场景</a><span aria-hidden="true">/</span><span aria-current="page">{{page.item.title}}</span></nav><div class="detail-hero-grid"><div><p class="eyebrow">{{page.item.customer}}</p><h1>{{page.item.title}}</h1><p class="lead">{{page.item.summary}}</p><a class="button button-primary" href="{{links.contact}}">联系我们 {{{icon "arrow-right"}}}</a></div><figure class="detail-media"><img src="{{assetUrl page.item.cover.src}}" alt="{{page.item.cover.alt}}" width="1200" height="800" fetchpriority="high"></figure></div></div></section>
+    <section class="section"><div class="container story-grid"><article><p class="eyebrow">挑战</p><h2>面临的挑战</h2><p>{{page.item.challenge}}</p></article><article><p class="eyebrow">方案</p><h2>解决方案</h2><p>{{page.item.solution}}</p></article></div></section>
+    <section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">成果</p><h2>带来的改变</h2></div><div class="result-grid">{{#each page.item.results}}<p>{{this}}</p>{{/each}}</div></div></section>
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

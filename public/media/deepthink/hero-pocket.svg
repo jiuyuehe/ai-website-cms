@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Compact low-light camera over a night river</title>
+  <desc id="desc">An original dark blue editorial illustration of a compact low-light camera above a city river.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#071326"/><stop offset=".65" stop-color="#122b4c"/><stop offset="1" stop-color="#03050c"/></linearGradient>
+    <linearGradient id="cam" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#454c62"/><stop offset=".3" stop-color="#141824"/><stop offset="1" stop-color="#04050a"/></linearGradient>
+    <radialGradient id="blueLens"><stop stop-color="#d6e7ff"/><stop offset=".15" stop-color="#788dff"/><stop offset=".5" stop-color="#161e42"/><stop offset="1" stop-color="#03040a"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#night)"/>
+  <path d="M0 680 185 590l150 67 112-88 186 112 160-122 175 107 168-135 144 96 130-102 170 109 170-74 170 102v438H0z" fill="#09162a" opacity=".9"/>
+  <path d="M0 840c320-100 586-92 914-22 322 69 638 58 1006-44v306H0z" fill="#02040b"/>
+  <g fill="#5eacff" opacity=".55"><rect x="246" y="590" width="6" height="85"/><rect x="444" y="622" width="8" height="60"/><rect x="718" y="575" width="6" height="94"/><rect x="1222" y="610" width="7" height="82"/><rect x="1510" y="554" width="8" height="100"/></g>
+  <g transform="translate(990 228) rotate(3 370 270)">
+    <ellipse cx="400" cy="660" rx="386" ry="42" fill="#000" opacity=".5"/>
+    <rect x="58" y="92" width="690" height="370" rx="76" fill="url(#cam)" stroke="#778196" stroke-width="8"/>
+    <rect x="92" y="132" width="620" height="286" rx="48" fill="#0d111c"/>
+    <circle cx="255" cy="274" r="151" fill="#1a2032" stroke="#657089" stroke-width="9"/>
+    <circle cx="255" cy="274" r="112" fill="url(#blueLens)" stroke="#bcc8e3" stroke-width="6"/>
+    <circle cx="255" cy="274" r="42" fill="#03050a"/><circle cx="218" cy="232" r="20" fill="#fff" opacity=".58"/>
+    <rect x="494" y="150" width="154" height="52" rx="26" fill="#262d3c"/><circle cx="588" cy="176" r="13" fill="#a08fff"/>
+    <circle cx="595" cy="352" r="42" fill="#1c2433" stroke="#747f94" stroke-width="7"/><circle cx="595" cy="352" r="15" fill="#05060b"/>
+    <path d="M80 462h642l-65 60H148z" fill="#090b13" stroke="#4d566b" stroke-width="7"/>
+    <path d="M90 90h620l-48-38H144z" fill="#2b3345"/>
+  </g>
+</svg>

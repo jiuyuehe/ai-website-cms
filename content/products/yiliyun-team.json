@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-team",
+  "status": "published",
+  "title": "团队协作空间",
+  "summary": "围绕项目与团队建立共享空间，支持文件评论、最近使用与协作记录，让多人在同一套文件上高效协作。",
+  "updatedAt": "2026-08-04",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云团队协作空间围绕项目共享文件与协作"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云团队协作空间"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云团队协作空间界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "协作空间", "value": "项目 / 团队共享空间"},
+    {"label": "文件评论", "value": "围绕文件进行讨论"},
+    {"label": "最近使用", "value": "快速回到高频文件"},
+    {"label": "协作记录", "value": "更新与访问可追踪"}
+  ],
+  "badges": ["协作能力", "团队效率"],
+  "content": {
+    "intro": "团队协作空间把共享、评论与最近使用放到同一处，让团队围绕文件而不是聊天记录协作。每个人都能找到最新版本、了解进展，减少反复传文件、对版本的沟通成本。",
+    "features": [
+      {"title": "项目共享空间", "body": "为每个项目建立独立共享空间，资料集中、权限清晰。", "icon": "folder"},
+      {"title": "文件评论", "body": "在文件上直接讨论与标注，让意见留在文档旁。", "icon": "message-circle"},
+      {"title": "最近使用", "body": "高频文件一键可达，减少重复查找。", "icon": "clock"}
+    ],
+    "advantages": [
+      {"title": "围绕文件协作", "body": "讨论、版本与进展都在文件上下文里，沟通更聚焦。"},
+      {"title": "找资料更快", "body": "共享空间与最近使用让高频文件触手可及。"},
+      {"title": "进展透明", "body": "谁更新了什么一目了然，协作节奏更清晰。"}
+    ],
+    "scenarios": [
+      {"title": "项目推进", "body": "多个团队围绕项目空间共享方案、进度与交付物。"},
+      {"title": "跨部门协同", "body": "市场、产品与研发在同一套文件上对齐信息。"},
+      {"title": "远程协作", "body": "分布在不同地点的团队统一访问最新资料。"}
+    ],
+    "faq": [
+      {"question": "协作空间支持多少人同时使用？", "answer": "支持团队规模灵活配置，可按套餐为团队建立多个共享空间。"},
+      {"question": "可以在文件上留言评论吗？", "answer": "可以。支持围绕文件进行评论与讨论，意见集中保留在文档旁。"}
+    ],
+    "downloads": ["yiliyun-white-paper"]
+  },
+  "seo": {
+    "title": "团队协作空间 | 一粒云",
+    "description": "围绕项目与团队建立共享空间，支持文件评论与协作记录，让团队高效协作。",
+    "keywords": ["团队协作", "共享空间", "文件评论", "项目协作", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

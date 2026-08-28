@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Stabilized low-light camera above a city</title>
+  <desc id="desc">An original dark editorial illustration of a compact stabilized camera against a distant evening skyline.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171827"/><stop offset=".55" stop-color="#34355a"/><stop offset="1" stop-color="#0a0b12"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#596073"/><stop offset=".38" stop-color="#171b27"/><stop offset="1" stop-color="#05060a"/></linearGradient>
+    <radialGradient id="lens" cx="44%" cy="42%"><stop stop-color="#c9d5ff"/><stop offset=".16" stop-color="#535f95"/><stop offset=".42" stop-color="#15182b"/><stop offset="1" stop-color="#03040a"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <ellipse cx="410" cy="390" rx="530" ry="190" fill="#a5a7c8" opacity=".18" filter="url(#blur)"/>
+  <g fill="#111322" opacity=".62">
+    <path d="M0 714h140V562h82v152h60V456h92v258h74V520h80v194h70V600h120v114h88v-181h73v181h87v-98h92v98h84v-240h110v240H0z"/>
+    <path d="M0 780h1920v300H0z"/>
+  </g>
+  <g fill="#c5bfff" opacity=".18">
+    <circle cx="174" cy="654" r="4"/><circle cx="300" cy="580" r="4"/><circle cx="464" cy="632" r="4"/><circle cx="690" cy="616" r="4"/><circle cx="820" cy="550" r="4"/>
+  </g>
+  <path d="M0 870c240-52 440-20 650 12 210 32 390 15 594-13 242-34 446-40 676 8v203H0z" fill="#080910"/>
+  <g transform="translate(1080 120)">
+    <ellipse cx="416" cy="840" rx="382" ry="52" fill="#000" opacity=".55"/>
+    <path d="M136 560 72 704l66 48h490l96-96-70-74z" fill="url(#metal)" stroke="#747b91" stroke-width="7"/>
+    <path d="m134 580 420-30 75 52-64 104-456-10z" fill="#1a1f2c"/>
+    <rect x="246" y="600" width="166" height="94" rx="18" fill="#303748" stroke="#9197a9" stroke-width="5"/>
+    <circle cx="331" cy="646" r="46" fill="url(#lens)" stroke="#adb4cd" stroke-width="6"/>
+    <circle cx="331" cy="646" r="17" fill="#dce5ff" opacity=".45"/>
+    <path d="M170 522 120 436l42-84 314-4 72 82-28 82z" fill="#0b0d15" stroke="#606a82" stroke-width="7"/>
+    <path d="M190 426h314l34 46-32 32H178l-30-42z" fill="#252b3b"/>
+    <path d="M262 346 274 110l68-62 112 42 29 252z" fill="#0b0d15" stroke="#6c7387" stroke-width="8"/>
+    <path d="m285 116 126-28 29 208-136 21z" fill="#3b4252"/>
+    <path d="m292 104 112-24 27 188-119 21z" fill="url(#lens)" stroke="#c3c9db" stroke-width="7"/>
+    <circle cx="351" cy="173" r="53" fill="url(#lens)" stroke="#d8dff1" stroke-width="6"/>
+    <circle cx="351" cy="173" r="21" fill="#05060d"/><circle cx="335" cy="154" r="9" fill="#fff" opacity=".68"/>
+    <path d="M270 420 162 362l-45 42 106 84zM472 408l89-58 44 46-110 89z" fill="#242a3b" stroke="#777f95" stroke-width="6"/>
+    <rect x="310" y="700" width="102" height="118" rx="22" fill="#161a24" stroke="#626b80" stroke-width="6"/>
+    <path d="M318 818h88l-18 68h-58z" fill="#535a69"/><circle cx="361" cy="868" r="27" fill="#11131b" stroke="#949bad" stroke-width="5"/>
+    <path d="M140 764h-98l-18 34h130zM594 754h110l20 38H588z" fill="#11131c" stroke="#667087" stroke-width="5"/>
+  </g>
+</svg>

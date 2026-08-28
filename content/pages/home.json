@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "hero": {
+    "summary": "统一管理企业文件、部门资料与共享内容，让存储、权限、版本、外链和协作都在一个空间完成。",
+    "slides": [
+      {
+        "id": "yiliyun-hero",
+        "eyebrow": "一粒云 SaaS 企业网盘",
+        "title": "企业文件协作，从安全管理开始",
+        "summary": "统一管理企业文件、部门资料与共享内容，让存储、权限、版本、外链和协作都在一个空间完成。",
+        "media": {"src": "media/yiliyun/hero.png", "alt": "一粒云企业网盘统一管理企业文件、权限与协作"},
+        "actions": [
+          {"label": "立即免费试用", "route": "mailto:hello@yiliyun.example"},
+          {"label": "查看产品能力", "route": "products/index.html"}
+        ],
+        "tone": "light",
+        "autoplayMs": 6800
+      }
+    ]
+  },
+  "intro": {
+    "title": "一个企业空间，管好日常文件协作",
+    "body": "不增加员工使用负担，把企业资料从“散落在个人电脑和聊天工具”变成统一、可控、可追溯的数字资产。"
+  },
+  "capabilities": [
+    {"title": "文件集中管理", "body": "个人、部门、项目与共享资料统一归档，减少文件散落与重复保存。", "icon": "layers"},
+    {"title": "团队高效共享", "body": "围绕文件进行共享、版本和协作，减少反复传文件、找文件、对版本。", "icon": "workflow"},
+    {"title": "权限全程可控", "body": "从内部访问到外部分享都能设置边界，关键操作可记录、可追踪。", "icon": "shield-check"}
+  ],
+  "features": [
+    {"title": "企业文件管理", "body": "部门空间、个人空间、团队共享与多级目录，资料统一存放。", "icon": "folder"},
+    {"title": "团队协作共享", "body": "内部共享、协作空间、文件评论与最近使用，让团队找资料更快。", "icon": "users"},
+    {"title": "版本与在线预览", "body": "常用文件无需下载即可查看；历史版本自动保留，误改可回溯。", "icon": "file-clock"},
+    {"title": "权限与安全控制", "body": "按组织、成员和文件设置访问边界，重要资料可限制下载与外发。", "icon": "shield-check"},
+    {"title": "安全外链", "body": "对外分享可设置有效期、访问密码和下载策略，客户交付更规范。", "icon": "link"},
+    {"title": "企业管理与扩展", "body": "组织架构、成员、容量与套餐统一管理，并为后续审批和 AI 能力预留扩展。", "icon": "building"}
+  ],
+  "valueBand": {
+    "title": "让工作跟着文件走，而不是跟着人和聊天记录走",
+    "body": "把业务资料放回企业自己的文件体系中，人员变化、项目交接和长期沉淀都更清晰。",
+    "tags": ["离职资料可交接", "历史版本可追溯", "客户外发可控制", "部门数据可沉淀"],
+    "metrics": [
+      {"value": "统一入口", "label": "减少多平台来回找文件"},
+      {"value": "权限到人", "label": "谁能看、能否下载更清楚"},
+      {"value": "版本留痕", "label": "避免“最终版_v7”式混乱"},
+      {"value": "持续扩展", "label": "从网盘延伸到审批与 AI"}
+    ]
+  },
+  "pricing": {
+    "title": "三档套餐，按团队阶段选择",
+    "body": "价格展示保持直接，复杂能力不堆在官网上；私有化和大型企业需求单独评估。",
+    "note": "* 页面价格可作为官网展示稿，正式上线前建议与后台套餐配置再次核对。",
+    "plans": [
+      {
+        "name": "免费版",
+        "fit": "适合小团队体验企业文件协作",
+        "price": "¥0",
+        "unit": "/ 永久",
+        "features": ["基础企业网盘", "团队共享与在线预览", "基础成员与权限管理", "适合快速试用"],
+        "ctaLabel": "免费开始"
+      },
+      {
+        "name": "团队版",
+        "badge": "主推",
+        "fit": "适合成长型企业与部门日常协作",
+        "price": "¥69",
+        "unit": "/ 人 / 月",
+        "features": ["完整网盘与团队空间", "版本管理与外链分享", "更完整的权限与审计", "适合企业正式使用"],
+        "ctaLabel": "立即试用",
+        "highlight": true
+      },
+      {
+        "name": "商业版",
+        "fit": "适合对安全、权限和集成要求更高的企业",
+        "price": "¥129",
+        "unit": "/ 人 / 月",
+        "features": ["高级权限与安全策略", "SSO / 企业组织集成", "API 与高级管理能力", "面向规模化使用"],
+        "ctaLabel": "联系销售"
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "从企业网盘，持续扩展企业智能工作能力",
+    "body": "官网只展示清晰的未来方向，不堆复杂技术名词，让客户知道今天能用什么、明天还能获得什么。",
+    "items": [
+      {"title": "流程审批", "body": "围绕文件外发、关键操作与业务资料增加审批与归档闭环。", "status": "规划扩展", "statusTone": "next"},
+      {"title": "AI 智脑", "body": "基于企业资料提供知识问答、内容总结与工作辅助。", "status": "规划扩展", "statusTone": "next"},
+      {"title": "AI 微站", "body": "把企业产品资料转成可持续更新的对外网站与客户入口。", "status": "规划扩展", "statusTone": "next"},
+      {"title": "智能问数与 Agent", "body": "连接业务数据、知识与工具，让企业从“找资料”走向“直接完成工作”。", "status": "未来方向"}
+    ]
+  },
+  "private": {
+    "kicker": "私有化部署",
+    "title": "数据需要留在本地？我们提供私有化版本",
+    "body": "适合对数据边界、网络环境、存储架构或系统集成有更高要求的企业，可按实际场景提供专属部署方案。",
+    "points": ["本地部署", "专属存储", "组织与身份集成", "定制实施服务"],
+    "actionLabel": "联系我们"
+  },
+  "sectionHeadings": {
+    "products": {
+      "title": "产品与方案",
+      "body": "围绕企业文件协作的完整能力，按需选用。"
+    },
+    "scenarios": {
+      "title": "真实场景",
+      "body": "看看不同团队如何使用企业文件协作。"
+    },
+    "media": {
+      "title": "最新动态",
+      "body": "关于企业文件协作与产品更新的观察。"
+    },
+    "contact": {
+      "title": "把一个真实需求带来。",
+      "body": "告诉我们团队正在面对的文件、权限或协作问题。"
+    }
+  },
+  "featuredProductIds": ["yiliyun-drive", "yiliyun-permission", "yiliyun-share", "yiliyun-version"],
+  "featuredCaseIds": ["manufacturing-rd", "retail-chains", "finance-permission", "design-institute"]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["theme", "contentDir", "themesDir", "publicDir", "outputDir", "cacheDir"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "theme": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "contentDir": {"type": "string", "minLength": 1},
+    "themesDir": {"type": "string", "minLength": 1},
+    "publicDir": {"type": "string", "minLength": 1},
+    "outputDir": {"type": "string", "minLength": 1},
+    "cacheDir": {"type": "string", "minLength": 1}
+  }
+}

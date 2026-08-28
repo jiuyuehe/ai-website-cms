@@ -1,0 +1,94 @@
+{{> partials/page-head}}
+<body class="page-list page-pricing">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">价格方案</span></nav><p class="eyebrow">{{#if page.intro.eyebrow}}{{page.intro.eyebrow}}{{else}}Pricing{{/if}}</p><h1>{{{page.intro.title}}}</h1><p>{{page.intro.body}}</p></div></section>
+
+    {{#if page.plans.length}}
+    <section class="section section-plans" id="plans">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">团队套餐</p><h2>按团队阶段选择</h2><p>从免费体验到规模化使用，套餐能力逐步完整。</p></div>
+        <div class="price-grid">
+          {{#each page.plans}}
+            <article class="price-card{{#if highlight}} highlight{{/if}}">
+              {{#if badge}}<div class="recommend-badge">{{badge}}</div>{{/if}}
+              <div class="price-top"><h3>{{name}}</h3><div class="fit">{{fit}}</div><div class="price"><b>{{price}}</b><span>{{unit}}</span></div></div>
+              <ul class="price-list">
+                {{#each features}}<li>{{{icon "check"}}}{{this}}</li>{{/each}}
+              </ul>
+              <a class="button {{#if highlight}}button-primary{{else}}{{#if @last}}button-secondary{{else}}button-soft{{/if}}{{/if}}" href="{{@root.links.contact}}">{{#if ctaLabel}}{{ctaLabel}}{{else}}{{#if highlight}}立即试用{{else}}{{#if @last}}联系销售{{else}}免费开始{{/if}}{{/if}}{{/if}} {{{icon "arrow-right"}}}</a>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.products.length}}
+    <section class="section section-products-price" id="products">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">单品能力</p><h2>按能力单独选配</h2><p>为已有套餐补充单品能力，按需叠加、灵活计费。</p></div>
+        <div class="price-item-grid">
+          {{#each page.products}}
+            <article class="price-item-card">
+              <div class="price-item-head"><h3>{{name}}</h3>{{#if note}}<span class="price-item-note">{{note}}</span>{{/if}}</div>
+              {{#if summary}}<p class="price-item-summary">{{summary}}</p>{{/if}}
+              <div class="price-item-foot"><div class="price-item-price"><b>{{price}}</b><span>{{unit}}</span></div><a class="button button-secondary" href="{{@root.links.contact}}">咨询 {{#if @last}}方案{{else}}加购{{/if}}</a></div>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.custom.length}}
+    <section class="section section-muted section-custom" id="custom">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">特殊优化</p><h2>按场景单独评估</h2><p>私有化、性能优化与定制集成，按实际业务场景提供专属方案。</p></div>
+        <div class="custom-grid">
+          {{#each page.custom}}
+            <article class="custom-card">
+              <span class="icon-box" aria-hidden="true">{{#if @first}}{{{icon "server"}}}{{else}}{{#if @second}}{{{icon "gauge"}}}{{else}}{{{icon "settings"}}}{{/if}}{{/if}}</span>
+              <h3>{{title}}</h3>
+              <p>{{body}}</p>
+              {{#if price}}<div class="custom-price">{{price}}</div>{{/if}}
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.promotions.length}}
+    <section class="section section-promotions" id="promotions">
+      <div class="container">
+        <div class="section-heading-row"><div class="section-heading"><p class="eyebrow">特价活动</p><h2>限时优惠与专属礼遇</h2><p>关注活动时间，不错过更合适的入手时机。</p></div></div>
+        <div class="promotion-grid">
+          {{#each page.promotions}}
+            <article class="promotion-card">
+              {{#if badge}}<div class="promotion-badge">{{badge}}</div>{{/if}}
+              <div class="promotion-body">
+                <h3>{{title}}</h3>
+                <p>{{body}}</p>
+                <div class="promotion-foot">
+                  <div class="promotion-price"><b>{{price}}</b><span>{{unit}}</span></div>
+                  {{#if validUntil}}<span class="promotion-valid">至 {{validUntil}}</span>{{/if}}
+                </div>
+              </div>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.note}}<div class="container"><p class="price-note">{{page.note}}</p></div>{{/if}}
+
+    <section class="section contact-band" id="contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">需要报价</p><h2>聊聊你的具体需求。</h2></div>
+        <div><p>告诉我们团队规模、使用场景与预算，我们会给出更合适的方案建议。</p><a class="button button-primary" href="mailto:{{site.contact.email}}">发送邮件 {{{icon "mail"}}}</a></div>
+      </div>
+    </section>
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

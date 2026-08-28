@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "status", "hero", "intro", "capabilities"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "status": {"enum": ["draft", "published"]},
+    "hero": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {"required": ["slides"], "properties": {"slides": {}}},
+        {"required": ["summary", "image", "primaryAction", "secondaryAction"], "properties": {"summary": {}, "image": {}, "primaryAction": {}, "secondaryAction": {}}}
+      ],
+      "properties": {
+        "summary": {"type": "string", "minLength": 10, "maxLength": 240},
+        "image": {"type": "string", "minLength": 1},
+        "primaryAction": {"$ref": "#/$defs/action"},
+        "secondaryAction": {"$ref": "#/$defs/action"},
+        "slides": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {"$ref": "#/$defs/slide"}
+        }
+      }
+    },
+    "intro": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body"],
+      "properties": {
+        "title": {"type": "string"},
+        "body": {"type": "string"}
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/capability"}
+    },
+    "features": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 12,
+      "items": {"$ref": "#/$defs/featureItem"}
+    },
+    "valueBand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "tags", "metrics"],
+      "properties": {
+        "title": {"type": "string", "minLength": 2, "maxLength": 200},
+        "body": {"type": "string", "minLength": 2, "maxLength": 400},
+        "tags": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "metrics": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {"$ref": "#/$defs/metric"}
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "plans", "note"],
+      "properties": {
+        "title": {"type": "string", "minLength": 2, "maxLength": 200},
+        "body": {"type": "string", "minLength": 2, "maxLength": 400},
+        "note": {"type": "string", "maxLength": 400},
+        "plans": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {"$ref": "#/$defs/pricingPlan"}
+        }
+      }
+    },
+    "roadmap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "items"],
+      "properties": {
+        "title": {"type": "string", "minLength": 2, "maxLength": 200},
+        "body": {"type": "string", "minLength": 2, "maxLength": 400},
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {"$ref": "#/$defs/roadmapItem"}
+        }
+      }
+    },
+    "private": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kicker", "title", "body", "points", "actionLabel"],
+      "properties": {
+        "kicker": {"type": "string", "maxLength": 80},
+        "title": {"type": "string", "minLength": 2, "maxLength": 200},
+        "body": {"type": "string", "minLength": 2, "maxLength": 400},
+        "points": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "actionLabel": {"type": "string", "minLength": 1, "maxLength": 40}
+      }
+    },
+    "sectionHeadings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "technology": {"$ref": "#/$defs/sectionHeading"},
+        "products": {"$ref": "#/$defs/sectionHeading"},
+        "scenarios": {"$ref": "#/$defs/sectionHeading"},
+        "media": {"$ref": "#/$defs/sectionHeading"},
+        "contact": {"$ref": "#/$defs/sectionHeading"}
+      }
+    },
+    "featuredProductIds": {"type": "array", "items": {"type": "string"}},
+    "featuredCaseIds": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "route"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "route": {"type": "string", "minLength": 1}
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["src"],
+      "properties": {
+        "src": {"type": "string", "minLength": 1},
+        "alt": {"type": "string"},
+        "mobileSrc": {"type": "string", "minLength": 1},
+        "video": {"type": "string", "minLength": 1},
+        "poster": {"type": "string", "minLength": 1}
+      }
+    },
+    "slide": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary", "media", "actions"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "eyebrow": {"type": "string", "maxLength": 80},
+        "title": {"type": "string", "minLength": 1, "maxLength": 160},
+        "summary": {"type": "string", "minLength": 1, "maxLength": 240},
+        "media": {"$ref": "#/$defs/media"},
+        "actions": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {"$ref": "#/$defs/action"}
+        },
+        "tone": {"enum": ["light", "dark", "auto"]},
+        "autoplayMs": {"type": "integer", "minimum": 2000, "maximum": 30000}
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "icon"],
+      "properties": {
+        "title": {"type": "string"},
+        "body": {"type": "string"},
+        "icon": {"enum": ["layers", "message-circle", "book-open", "workflow", "shield-check", "chart-no-axes-combined"]}
+      }
+    },
+    "featureItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "icon"],
+      "properties": {
+        "title": {"type": "string"},
+        "body": {"type": "string"},
+        "icon": {"type": "string"}
+      }
+    },
+    "sectionHeading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body"],
+      "properties": {
+        "title": {"type": "string", "minLength": 2, "maxLength": 160},
+        "body": {"type": "string", "minLength": 2, "maxLength": 320}
+      }
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "label"],
+      "properties": {
+        "value": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1}
+      }
+    },
+    "pricingPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "fit", "price", "unit", "features"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 40},
+        "badge": {"type": "string", "maxLength": 20},
+        "fit": {"type": "string", "maxLength": 120},
+        "price": {"type": "string", "minLength": 1, "maxLength": 20},
+        "unit": {"type": "string", "maxLength": 40},
+        "features": {"type": "array", "minItems": 1, "maxItems": 12, "items": {"type": "string", "minLength": 1}},
+        "ctaLabel": {"type": "string", "maxLength": 40},
+        "highlight": {"type": "boolean"}
+      }
+    },
+    "roadmapItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body", "status"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1, "maxLength": 120},
+        "body": {"type": "string", "minLength": 1, "maxLength": 400},
+        "status": {"type": "string", "minLength": 1, "maxLength": 40},
+        "statusTone": {"type": "string", "enum": ["default", "next"]}
+      }
+    }
+  }
+}

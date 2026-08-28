@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-version",
+  "status": "published",
+  "title": "版本管理",
+  "summary": "文件历史版本自动保留，误改可随时回溯与恢复，避免“最终版_v7”式的命名混乱，让团队协作更放心。",
+  "updatedAt": "2026-08-06",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云版本管理自动保留历史版本并可回溯"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云版本管理"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云版本管理界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "版本保留", "value": "历史版本自动保存"},
+    {"label": "版本对比", "value": "查看各版本更新时间与操作人"},
+    {"label": "恢复机制", "value": "一键回溯到历史版本"},
+    {"label": "更新记录", "value": "操作人 / 时间 / 说明可查"}
+  ],
+  "badges": ["协作能力", "防误操作"],
+  "content": {
+    "intro": "版本管理为每一次修改保留历史记录，让误删、误改都可以安全回退。团队协作时不再依赖“最终版_v7”式的文件命名，每个人都在最新版本上工作，历史始终可追溯。",
+    "features": [
+      {"title": "自动留痕", "body": "文件每次更新自动生成历史版本，无需手动备份。", "icon": "file-clock"},
+      {"title": "一键恢复", "body": "发现误改或误删时，可快速回到任一历史版本。", "icon": "rotate-ccw"},
+      {"title": "协作透明", "body": "谁在什么时间更新了什么，一目了然。", "icon": "users"}
+    ],
+    "advantages": [
+      {"title": "告别版本混乱", "body": "不再需要“最终版_v8”式命名，始终围绕最新版本协作。"},
+      {"title": "误操作可回退", "body": "误改、误删都有历史兜底，团队操作更放心。"},
+      {"title": "责任清晰", "body": "更新记录可查，关键文档的变更过程完整可追溯。"}
+    ],
+    "scenarios": [
+      {"title": "方案与合同", "body": "对方案、报价、合同等高频修改文档保留完整版本历史。"},
+      {"title": "设计文件", "body": "图纸、视觉与设计源文件迭代时，随时回溯到合适版本。"},
+      {"title": "制度文档", "body": "企业制度与流程文档每次修订留痕，版本脉络清晰。"}
+    ],
+    "faq": [
+      {"question": "历史版本会占用额外空间吗？", "answer": "会保留一定数量的历史版本，并提供容量策略配置，可按需控制保留数量。"},
+      {"question": "误删的文件能恢复吗？", "answer": "可以。配合回收站与版本管理，误删误改的文件大多可安全恢复。"}
+    ],
+    "downloads": ["yiliyun-white-paper"]
+  },
+  "seo": {
+    "title": "版本管理 | 一粒云",
+    "description": "文件历史版本自动保留，误改可随时回溯与恢复，让团队协作更放心。",
+    "keywords": ["版本管理", "历史版本", "文件恢复", "协作", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

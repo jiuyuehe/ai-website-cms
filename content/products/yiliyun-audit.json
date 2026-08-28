@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-audit",
+  "status": "published",
+  "title": "审计与归档",
+  "summary": "关键文件操作全程留痕，配合审批流程与归档策略，让企业文件从使用到沉淀都有清晰、可追溯的记录。",
+  "updatedAt": "2026-08-02",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云审计与归档记录关键文件操作并归档沉淀"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云审计与归档"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云审计与归档界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "审计范围", "value": "上传 / 下载 / 外发 / 删除 / 权限变更"},
+    {"label": "归档策略", "value": "按目录与周期自动归档"},
+    {"label": "审批流", "value": "关键操作可接入审批"},
+    {"label": "留存管理", "value": "访问与操作记录可查询"}
+  ],
+  "badges": ["合规能力", "数据治理"],
+  "content": {
+    "intro": "审计与归档让企业文件的使用过程可记录、可追溯。关键操作全程留痕，业务资料按策略归档沉淀，并为后续的流程审批与数据治理打好基础。",
+    "features": [
+      {"title": "全程留痕", "body": "上传、下载、外发、删除等关键操作都有记录。", "icon": "file-clock"},
+      {"title": "归档沉淀", "body": "按目录与周期自动归档，业务资料长期可查。", "icon": "archive"},
+      {"title": "审批衔接", "body": "关键操作可接入审批流，形成审批与归档闭环。", "icon": "workflow"}
+    ],
+    "advantages": [
+      {"title": "合规可查", "body": "面向审计要求的文件操作记录完整可追溯。"},
+      {"title": "数据沉淀", "body": "归档策略让业务资料长期留存，形成企业数字资产。"},
+      {"title": "流程闭环", "body": "审批、留痕与归档衔接，文件治理更系统。"}
+    ],
+    "scenarios": [
+      {"title": "行业合规", "body": "为金融、医疗等监管要求保留关键文件操作记录。"},
+      {"title": "内部风控", "body": "对敏感资料的访问与外发进行留痕与审批管控。"},
+      {"title": "长期归档", "body": "合同、验收单等项目资料按周期归档沉淀。"}
+    ],
+    "faq": [
+      {"question": "审计日志会保存多久？", "answer": "按企业合规需要配置留存周期，关键操作记录可长期保留并查询。"},
+      {"question": "关键操作可以设置审批吗？", "answer": "可以。文件外发、删除等关键操作可接入审批流程，形成闭环。"}
+    ],
+    "downloads": ["yiliyun-security-manual", "yiliyun-deploy-guide"]
+  },
+  "seo": {
+    "title": "审计与归档 | 一粒云",
+    "description": "关键文件操作全程留痕，配合审批与归档策略，让企业文件使用与沉淀可追溯。",
+    "keywords": ["审计", "归档", "审批流程", "数据治理", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

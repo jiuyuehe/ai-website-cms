@@ -1,0 +1,195 @@
+{{> partials/page-head}}
+<body class="page-home">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  {{> partials/header}}
+  <main id="main">
+    {{#if page.hero.slides}}
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          {{#if page.hero.slides.[0].eyebrow}}<p class="hero-kicker"><i></i> {{page.hero.slides.[0].eyebrow}}</p>{{else}}<p class="hero-kicker"><i></i> {{site.name}} SaaS 企业网盘</p>{{/if}}
+          <h1>{{#if page.hero.slides.[0].title}}{{{page.hero.slides.[0].title}}}{{else}}{{site.name}}{{/if}}</h1>
+          <p class="hero-summary">{{page.hero.slides.[0].summary}}</p>
+          <div class="hero-actions">
+            {{#each page.hero.slides.[0].actions}}
+              <a class="button {{#if @first}}button-primary{{else}}button-soft{{/if}}" href="{{href}}">{{label}} {{#if @first}}{{{icon "arrow-right"}}}{{/if}}</a>
+            {{/each}}
+          </div>
+        </div>
+        <div class="product-shell" aria-label="{{site.name}}界面示意">
+          {{#if page.hero.slides.[0].media.src}}
+            <img src="{{assetUrl page.hero.slides.[0].media.src}}" alt="{{page.hero.slides.[0].media.alt}}" width="1180" height="760" loading="eager">
+          {{else}}
+          <div class="window">
+            <div class="window-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="window-title">{{site.name}} · 企业空间</div></div>
+            <div class="mock-app">
+              <aside class="mock-side">
+                <div class="mock-logo"><div class="cloud">☁</div> {{site.shortName}}</div>
+                <div class="mock-nav active"><span>⌂</span> 首页</div>
+                <div class="mock-nav"><span>▣</span> 网盘</div>
+                <div class="mock-nav"><span>♢</span> 协同</div>
+                <div class="mock-nav"><span>⚙</span> 工具</div>
+              </aside>
+              <div class="mock-main">
+                <div class="mock-toolbar"><div class="mock-search">⌕ 搜索文件、内容与标签</div><div class="mock-upload">＋ 上传</div></div>
+                <div class="mock-stats">
+                  <div class="mock-stat"><small>企业空间</small><strong>328 GB</strong></div>
+                  <div class="mock-stat"><small>团队文件</small><strong>12,580</strong></div>
+                  <div class="mock-stat"><small>今日协作</small><strong>86 次</strong></div>
+                </div>
+                <div class="mock-list">
+                  <div class="mock-row head"><div>名称</div><div>状态</div><div>修改时间</div></div>
+                  <div class="mock-row"><div class="file-name"><div class="file-ic">DOC</div>产品资料库</div><div><span class="pill">团队共享</span></div><div>刚刚</div></div>
+                  <div class="mock-row"><div class="file-name"><div class="file-ic">PDF</div>销售报价体系.pdf</div><div><span class="pill blue">已更新</span></div><div>10:24</div></div>
+                  <div class="mock-row"><div class="file-name"><div class="file-ic">XLS</div>客户项目清单.xlsx</div><div><span class="pill">协作中</span></div><div>09:56</div></div>
+                  <div class="mock-row"><div class="file-name"><div class="file-ic">PPT</div>品牌方案V3.pptx</div><div><span class="pill blue">新版本</span></div><div>昨天</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.capabilities}}
+    <section class="section section-intro" id="overview">
+      <div class="container">
+        <div class="section-heading" style="text-align:center;margin:0 auto 40px;">
+          <p class="eyebrow">Overview</p>
+          <h2>一个企业空间，管好日常文件协作</h2>
+          <p>不增加员工使用负担，把企业资料从“散落在个人电脑和聊天工具”变成统一、可控、可追溯的数字资产。</p>
+        </div>
+        <div class="intro-grid">
+          {{#each page.capabilities}}
+            <article class="intro-card"><div class="num">{{#if @first}}01{{else}}{{#if @last}}03{{else}}02{{/if}}{{/if}}</div><h3>{{title}}</h3><p>{{body}}</p></article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.features}}
+    <section class="section section-features" id="features">
+      <div class="container">
+        <div class="section-heading" style="text-align:center;margin:0 auto 40px;">
+          <p class="eyebrow">Features</p>
+          <h2>核心能力，一眼看懂</h2>
+          <p>只保留企业最常用、最重要的能力，让官网信息清晰，不给客户制造阅读压力。</p>
+        </div>
+        <div class="feature-grid">
+          {{#each page.features}}
+            <article class="feature-card">
+              <div class="feature-icon">{{#if icon}}{{{icon icon}}}{{else}}{{{icon "layers"}}}{{/if}}</div>
+              <h3>{{title}}</h3><p>{{body}}</p>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.valueBand}}
+    <section class="value-band">
+      <div class="container">
+        <div class="value-panel">
+          <div>
+            <h2>{{{page.valueBand.title}}}</h2>
+            <p>{{page.valueBand.body}}</p>
+            <div class="value-tags">{{#each page.valueBand.tags}}<span class="value-tag">{{this}}</span>{{/each}}</div>
+          </div>
+          <div class="value-metrics">
+            {{#each page.valueBand.metrics}}
+              <div class="value-metric"><strong>{{value}}</strong><span>{{label}}</span></div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.pricing}}
+    <section class="section section-pricing" id="pricing">
+      <div class="container">
+        <div class="section-heading" style="text-align:center;margin:0 auto 40px;">
+          <p class="eyebrow">Pricing</p>
+          <h2>{{{page.pricing.title}}}</h2>
+          <p>{{page.pricing.body}}</p>
+        </div>
+        <div class="price-grid">
+          {{#each page.pricing.plans}}
+            <article class="price-card{{#if highlight}} highlight{{/if}}">
+              {{#if badge}}<div class="recommend-badge">{{badge}}</div>{{/if}}
+              <div class="price-top"><h3>{{name}}</h3><div class="fit">{{fit}}</div><div class="price"><b>{{price}}</b><span>{{unit}}</span></div></div>
+              <ul class="price-list">
+                {{#each features}}<li>{{{icon "check"}}}{{this}}</li>{{/each}}
+              </ul>
+              <a class="button {{#if highlight}}button-primary{{else}}{{#if @last}}button-secondary{{else}}button-soft{{/if}}{{/if}}" href="{{@root.links.contact}}">{{#if ctaLabel}}{{ctaLabel}}{{else}}{{#if highlight}}立即试用{{else}}{{#if @last}}联系销售{{else}}免费开始{{/if}}{{/if}}{{/if}} {{{icon "arrow-right"}}}</a>
+            </article>
+          {{/each}}
+        </div>
+        {{#if page.pricing.note}}<p class="price-note">{{page.pricing.note}}</p>{{/if}}
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.roadmap}}
+    <section class="section section-roadmap" id="roadmap">
+      <div class="container roadmap-wrap">
+        <div class="roadmap-copy">
+          <p class="eyebrow">Roadmap</p>
+          <h2>{{{page.roadmap.title}}}</h2>
+          <p>{{page.roadmap.body}}</p>
+        </div>
+        <div class="roadmap-list">
+          {{#each page.roadmap.items}}
+            <article class="roadmap-item">
+              <div class="roadmap-icon">{{#if icon}}{{{icon icon}}}{{else}}{{{icon "route"}}}{{/if}}</div>
+              <div><h3>{{title}}</h3><p>{{body}}</p></div>
+              <span class="status{{#if statusTone}} {{statusTone}}{{/if}}">{{status}}</span>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.private}}
+    <section class="section section-private" id="private">
+      <div class="container">
+        <div class="private-box">
+          <div>
+            <div class="private-kicker">{{page.private.kicker}}</div>
+            <h2>{{{page.private.title}}}</h2>
+            <p>{{page.private.body}}</p>
+            <div class="private-points">{{#each page.private.points}}<span><i></i>{{this}}</span>{{/each}}</div>
+          </div>
+          <a class="button button-dark" href="{{links.contact}}">{{page.private.actionLabel}} {{{icon "arrow-right"}}}</a>
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    {{#if page.news.length}}
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading-row"><div class="section-heading"><p class="eyebrow">News</p><h2>最新动态</h2><p>关于企业文件协作与产品更新的观察。</p></div><a class="text-link" href="{{links.news}}">查看全部文章 {{{icon "arrow-right"}}}</a></div>
+        <div class="news-list">
+          {{#each page.news}}
+            <a class="news-row" href="{{href}}"><time datetime="{{publishedAt}}">{{date publishedAt}}</time><strong>{{title}}</strong><span class="news-arrow">{{{icon "arrow-up-right"}}}</span></a>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
+    <section class="section contact-band" id="contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">开始交流</p><h2>把一个真实需求带来。</h2></div>
+        <div><p>告诉我们团队正在面对的文件、权限或协作问题，我们会从最清晰的切入点开始。</p><a class="button button-primary" href="mailto:{{site.contact.email}}">发送邮件 {{{icon "mail"}}}</a></div>
+      </div>
+    </section>
+  </main>
+  {{> partials/footer}}
+{{> partials/page-foot}}

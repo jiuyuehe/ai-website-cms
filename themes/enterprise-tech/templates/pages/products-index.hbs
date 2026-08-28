@@ -1,0 +1,8 @@
+{{> partials/page-head}}
+<body class="page-list page-products">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">产品</span></nav><p class="eyebrow">产品</p><h1>把知识接入真实服务</h1><p>从客户咨询到团队协作，让企业的知识在需要它的时刻被准确使用。</p></div></section>
+    <section class="section"><div class="container"><div class="product-grid">{{#each page.items}}{{> partials/product-card}}{{/each}}</div></div></section>
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

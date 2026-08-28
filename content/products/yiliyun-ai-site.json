@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-ai-site",
+  "status": "published",
+  "title": "AI 微站",
+  "summary": "把云盘里的资料一键发布成官网，AI 自动更新新闻与内容——想改什么，直接说。让企业官网随资料一起生长。",
+  "updatedAt": "2026-08-14",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云 AI 微站把云盘资料一键发布成可持续更新的官网"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云 AI 微站移动端官网"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云 AI 微站发布与更新界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "内容来源", "value": "企业网盘资料（授权范围）"},
+    {"label": "发布方式", "value": "一键发布为官网 / 客户门户"},
+    {"label": "更新方式", "value": "AI 自然语言指令驱动"},
+    {"label": "页面类型", "value": "首页 / 产品 / 案例 / 新闻 / 下载 / FAQ"},
+    {"label": "主题模板", "value": "企业级响应式官网模板"},
+    {"label": "权限衔接", "value": "仅发布授权资料，边界可控"}
+  ],
+  "badges": ["AI 能力", "内容即官网"],
+  "content": {
+    "intro": "AI 微站把「企业网盘里的资料」与「对外官网」打通：产品资料、案例与动态按模板一键发布成官网，并用 AI 自动完成内容更新。与一粒云 AI CMS 一脉相承——用户想改什么，直接说，AI 把资料变成官网、把指令变成更新。",
+    "features": [
+      {"title": "一键发布成官网", "body": "把云盘里的产品资料、案例与动态，按企业模板一键发布成可访问的官网。", "icon": "globe"},
+      {"title": "AI 自动更新", "body": "用自然语言告诉 AI 想更新什么，AI 自动改版内容并发布，无需写代码。", "icon": "sparkles"},
+      {"title": "内容单一来源", "body": "官网内容直接来自企业网盘，资料一变、官网跟着变，不再重复维护。", "icon": "database"}
+    ],
+    "advantages": [
+      {"title": "资料即官网", "body": "无需专业建站团队，把沉淀好的资料发布出去就是官网，省时省力。"},
+      {"title": "更新零门槛", "body": "想改产品说明、加一篇新闻，直接说给 AI，自动完成改版与发布。"},
+      {"title": "安全可控", "body": "仅发布授权范围内的资料，官网内容边界与企业权限一致。"},
+      {"title": "持续生长", "body": "官网与企业资料同步演进，从静态页面变成可持续更新的内容阵地。"}
+    ],
+    "scenarios": [
+      {"title": "产品官网快速上线", "body": "把产品手册与能力资料一键发布成产品官网，快速对外展示。"},
+      {"title": "客户交付门户", "body": "为重要客户生成专属资料门户，授权可见、随资料更新。"},
+      {"title": "对外内容展示", "body": "把案例、动态与下载资料组织成对外内容，客户入口更清晰。"}
+    ],
+    "faq": [
+      {"question": "AI 微站更新内容需要会编程吗？", "answer": "不需要。你只需用自然语言描述想更新什么，AI 会自动调整内容并完成发布。"},
+      {"question": "官网内容会泄露未授权的资料吗？", "answer": "不会。仅发布授权范围内的资料，并与企业权限体系保持一致，边界全程可控。"}
+    ],
+    "downloads": ["yiliyun-white-paper", "yiliyun-deploy-guide"]
+  },
+  "seo": {
+    "title": "AI 微站 | 一键发布成官网，AI 自动更新 | 一粒云",
+    "description": "把云盘资料一键发布成官网，AI 自动更新新闻与内容，想改什么直接说，让企业官网随资料一起生长。",
+    "keywords": ["AI微站", "一键建站", "AI更新", "企业官网", "内容发布", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

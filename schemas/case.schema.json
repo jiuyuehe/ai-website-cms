@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "id", "status", "title", "summary", "updatedAt", "cover", "customer", "challenge", "solution", "results", "productIds", "seo"],
+  "properties": {
+    "schemaVersion": {"const": 1}, "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "status": {"enum": ["draft", "published"]}, "title": {"type": "string"}, "summary": {"type": "string", "minLength": 10}, "updatedAt": {"type": "string", "format": "date"},
+    "cover": {"$ref": "#/$defs/image"}, "customer": {"type": "string"}, "challenge": {"type": "string"}, "solution": {"type": "string"}, "results": {"type": "array", "minItems": 2, "items": {"type": "string"}}, "productIds": {"type": "array", "items": {"type": "string"}}, "seo": {"$ref": "#/$defs/seo"}
+  },
+  "$defs": {"image": {"type": "object", "additionalProperties": false, "required": ["src", "alt"], "properties": {"src": {"type": "string"}, "alt": {"type": "string"}}}, "seo": {"type": "object", "additionalProperties": false, "required": ["title", "description", "keywords"], "properties": {"title": {"type": "string"}, "description": {"type": "string"}, "keywords": {"type": "array", "items": {"type": "string"}}, "image": {"type": "string"}}}}
+}

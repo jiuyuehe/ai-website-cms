@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-external-sharing",
+  "status": "published",
+  "question": "给外部客户或伙伴分享文件时，如何控制安全？",
+  "answer": "对外分享可走安全外链，支持设置有效期、访问密码与下载策略，链接到期自动失效，也可集中管理与一键回收。外部协作者只能访问被授权的范围，关键外发操作全程留痕。",
+  "updatedAt": "2026-08-04",
+  "productIds": ["yiliyun-share", "yiliyun-permission"]
+}

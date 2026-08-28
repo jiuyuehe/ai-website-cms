@@ -1,0 +1,5 @@
+{{> partials/page-head}}
+<body class="page-list page-cases">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">案例</span></nav><p class="eyebrow">案例</p><h1>从工作现场验证改变</h1><p>每个项目从一个具体的流程问题开始，以团队真正愿意使用的方式落地。</p></div></section><section class="section"><div class="container case-feature-grid">{{#each page.items}}{{> partials/case-card}}{{/each}}</div></section></main>
+  {{> partials/footer}}{{> partials/page-foot}}

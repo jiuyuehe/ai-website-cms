@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "remote-collab",
+  "status": "published",
+  "title": "跨地域团队远程协作",
+  "summary": "让分布在不同城市的团队通过统一企业空间共享文件、同步进展，突破地域限制实现高效协作。",
+  "updatedAt": "2026-07-30",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "跨地域团队通过企业网盘远程共享文件与协作"},
+  "customer": "某软件与互联网企业",
+  "challenge": "产品、研发与市场团队分布在多个城市，过去依赖即时通讯传递文件，版本不一致、信息碎片化，跨地域协作成本高、进展难同步。",
+  "solution": "为产品线与项目建立共享空间，统一管理文档、方案与版本；用团队协作空间和最近使用让各团队实时访问最新资料，减少来回传输。",
+  "results": [
+    "跨地域团队围绕统一空间协作，版本一致",
+    "信息碎片化减少，进展同步更清晰",
+    "远程协作不再依赖即时通讯传文件"
+  ],
+  "productIds": ["yiliyun-drive", "yiliyun-team", "yiliyun-version"],
+  "seo": {
+    "title": "跨地域团队远程协作案例 | 一粒云",
+    "description": "了解一粒云如何帮助跨地域团队实现统一文件协作与进展同步。",
+    "keywords": ["远程协作", "跨地域", "团队共享", "企业网盘", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

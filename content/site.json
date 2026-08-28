@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "一粒云",
+  "shortName": "一粒云",
+  "description": "一粒云 SaaS 企业网盘：安全存储、团队协作、权限控制、版本管理、外链分享与企业级扩展。",
+  "origin": "https://yiliyun.example",
+  "basePath": "/",
+  "language": "zh-CN",
+  "copyrightYear": 2026,
+  "logo": {
+    "src": "brand/yiliyun-mark.svg",
+    "alt": "一粒云标志"
+  },
+  "favicon": "brand/yiliyun-mark.svg",
+  "contact": {
+    "phone": "+86 400 820 6688",
+    "email": "hello@yiliyun.example",
+    "address": "企业文件协作与数据管理服务"
+  },
+  "navigation": [
+    {"label": "模块详解", "route": "products/index.html"},
+    {"label": "应用场景", "route": "cases/index.html"},
+    {"label": "产品动态", "route": "news/index.html"},
+    {"label": "价格方案", "route": "pricing/index.html"},
+    {"label": "资料下载", "route": "downloads/index.html"},
+    {"label": "常见问题", "route": "faq/index.html"}
+  ],
+  "utilityNavigation": [
+    {"label": "产品目录", "route": "products/index.html"},
+    {"label": "应用场景", "route": "cases/index.html"}
+  ],
+  "headerActions": [
+    {"label": "免费试用", "route": "mailto:hello@yiliyun.example"}
+  ],
+  "footerGroups": [
+    {
+      "title": "探索",
+      "items": [
+        {"label": "模块", "route": "products/index.html"},
+        {"label": "应用场景", "route": "cases/index.html"},
+        {"label": "产品动态", "route": "news/index.html"}
+      ]
+    },
+    {
+      "title": "支持",
+      "items": [
+        {"label": "资料下载", "route": "downloads/index.html"},
+        {"label": "常见问题", "route": "faq/index.html"}
+      ]
+    }
+  ],
+  "seo": {
+    "title": "一粒云 SaaS 企业网盘｜安全协作，从文件开始",
+    "description": "一粒云 SaaS 企业网盘：统一管理企业文件、部门资料与共享内容，让存储、权限、版本、外链和协作都在一个空间完成。",
+    "keywords": ["一粒云", "企业网盘", "企业文件协作", "云存储", "权限管理", "团队协作"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

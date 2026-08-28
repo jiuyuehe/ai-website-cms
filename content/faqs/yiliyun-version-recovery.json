@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-version-recovery",
+  "status": "published",
+  "question": "误改或误删的文件可以恢复吗？",
+  "answer": "可以。文件每次更新会自动保留历史版本，误改时可一键回溯到任意历史版本；误删的文件也可通过回收站安全恢复。配合版本管理，团队在关键文档上操作更放心。",
+  "updatedAt": "2026-08-06",
+  "productIds": ["yiliyun-drive", "yiliyun-version"]
+}

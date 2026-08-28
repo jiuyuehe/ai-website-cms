@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-white-paper",
+  "status": "published",
+  "title": "一粒云企业网盘产品白皮书",
+  "description": "系统介绍一粒云企业网盘的核心能力、权限模型、安全机制与适用场景，帮助团队快速了解产品全貌。",
+  "file": "downloads/yiliyun-white-paper.txt",
+  "updatedAt": "2026-08-10",
+  "productIds": ["yiliyun-drive", "yiliyun-permission", "yiliyun-share"]
+}

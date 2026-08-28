@@ -1,0 +1,28 @@
+{
+  "name": "ai-static-website-platform",
+  "version": "5.0.0",
+  "description": "Schema-driven static website generator with versioned themes.",
+  "type": "module",
+  "bin": {
+    "ai-cms": "./cli/ai-cms.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node cli/ai-cms.js build",
+    "validate": "node cli/ai-cms.js validate",
+    "report": "node cli/ai-cms.js report",
+    "preview": "node cli/ai-cms.js preview",
+    "test": "node --test",
+    "themes": "node cli/ai-cms.js theme list"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "handlebars": "^4.7.8",
+    "lucide-static": "^0.468.0",
+    "parse5": "^7.3.0",
+    "semver": "^7.7.2"
+  }
+}

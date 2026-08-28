@@ -1,0 +1,7 @@
+{{> partials/page-head}}
+<body class="page-list page-downloads">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">资料</span></nav><p class="dt-eyebrow dt-eyebrow-dark">RESOURCES</p><h1>带走一份清晰的产品信息</h1><p>从产品能力和适用场景开始了解未来智能。</p></div></section><section class="dt-section"><div class="dt-container download-list">{{#each page.items}}<article class="download-row"><div><h2>{{title}}</h2><p>{{description}}</p></div><a class="dt-button" href="{{href}}" download>下载资料 {{{icon "download"}}}</a></article>{{/each}}</div></section></main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

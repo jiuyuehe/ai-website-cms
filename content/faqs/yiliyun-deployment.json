@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-deployment",
+  "status": "published",
+  "question": "企业数据需要留在本地，可以私有化部署吗？",
+  "answer": "可以。一粒云提供私有化版本，支持本地部署、专属存储、组织与身份集成，并按实际场景提供定制实施服务。我们会根据企业规模、网络环境与安全要求，给出专属部署方案。",
+  "updatedAt": "2026-08-10",
+  "productIds": ["yiliyun-drive", "yiliyun-audit"]
+}

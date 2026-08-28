@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "id", "status", "question", "answer", "updatedAt", "productIds"],
+  "properties": {"schemaVersion": {"const": 1}, "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "status": {"enum": ["draft", "published"]}, "question": {"type": "string"}, "answer": {"type": "string"}, "updatedAt": {"type": "string", "format": "date"}, "productIds": {"type": "array", "items": {"type": "string"}}}
+}

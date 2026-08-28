@@ -1,0 +1,79 @@
+{{> partials/page-head}}
+<body class="page-home">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  {{> partials/header}}
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media"><img src="{{assetUrl page.hero.image}}" alt="{{site.name}}企业智能服务工作场景" width="1920" height="1100" fetchpriority="high"></div>
+      <div class="hero-scrim"></div>
+      <div class="container hero-shell">
+        <div class="hero-content">
+          <p class="hero-kicker">企业智能服务 <span>/</span> AI OPERATIONS</p>
+          <h1>{{site.name}}</h1>
+          <p class="hero-summary">{{page.hero.summary}}</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="{{page.hero.primaryAction.href}}">{{page.hero.primaryAction.label}} {{{icon "arrow-right"}}}</a>
+            <a class="button button-quiet" href="{{page.hero.secondaryAction.href}}">{{page.hero.secondaryAction.label}}</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="服务能力范围">
+          <p class="hero-aside-label">服务系统的三个入口</p>
+          <ul>
+            <li><span>01</span><strong>知识</strong><small>让回答有出处</small></li>
+            <li><span>02</span><strong>流程</strong><small>让协作有上下文</small></li>
+            <li><span>03</span><strong>反馈</strong><small>让运营能复盘</small></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="container hero-footer"><span>面向企业 IT 与运营团队</span><span>服务始于真实问题</span></div>
+    </section>
+
+    <section class="section section-intro">
+      <div class="container intro-grid">
+        {{> partials/section-heading title=page.intro.title body=page.intro.body}}
+        <p class="intro-note">从咨询入口开始，把知识、流程和反馈放进同一套服务系统。</p>
+      </div>
+    </section>
+
+    <section class="section section-capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-heading section-heading-narrow"><h2>让每一次服务都能留下能力</h2><p>从回答质量到协作效率，把体验里的细节转化为团队可以持续改进的工作。</p></div>
+        <div class="capability-grid">
+          {{#each page.capabilities}}
+            <article class="capability-item">
+              <span class="icon-box" aria-hidden="true">{{{icon icon}}}</span>
+              <h3>{{title}}</h3>
+              <p>{{body}}</p>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-products">
+      <div class="container">
+        <div class="section-heading-row"><div class="section-heading"><h2>从一个明确的问题开始</h2><p>用可落地的产品，把企业知识接入每天真实发生的服务。</p></div><a class="text-link" href="{{links.products}}">查看全部产品 {{{icon "arrow-right"}}}</a></div>
+        <div class="product-grid">{{#each page.products}}{{> partials/product-card}}{{/each}}</div>
+      </div>
+    </section>
+
+    <section class="section section-case">
+      <div class="container">
+        <div class="section-heading"><h2>真实流程，真实改进</h2><p>从团队的工作现场出发，先解决一个清晰的服务问题，再逐步扩展能力边界。</p></div>
+        <div class="case-feature-grid">{{#each page.cases}}{{> partials/case-card}}{{/each}}</div>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="container">
+        <div class="section-heading-row"><div class="section-heading"><h2>持续记录我们如何工作</h2><p>关于知识、服务流程和企业 AI 的实际观察。</p></div><a class="text-link" href="{{links.news}}">查看全部文章 {{{icon "arrow-right"}}}</a></div>
+        <div class="news-list">{{#each page.news}}<a class="news-row" href="{{href}}"><time datetime="{{publishedAt}}">{{date publishedAt}}</time><strong>{{title}}</strong><span class="news-arrow">{{{icon "arrow-up-right"}}}</span></a>{{/each}}</div>
+      </div>
+    </section>
+
+    <section class="section contact-band" id="contact">
+      <div class="container contact-grid"><div><p class="eyebrow">开始交流</p><h2>把一个真实问题带来。</h2></div><div><p>告诉我们团队正在面对的服务、知识或协作问题，我们会从最清晰的切入点开始。</p><a class="button button-primary" href="mailto:{{site.contact.email}}">发送邮件 {{{icon "mail"}}}</a></div></div>
+    </section>
+  </main>
+  {{> partials/footer}}
+{{> partials/page-foot}}

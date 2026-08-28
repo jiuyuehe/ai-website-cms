@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-share",
+  "status": "published",
+  "title": "安全外链分享",
+  "summary": "对外分享文件可设置有效期、访问密码与下载策略，客户交付、供应商协作与跨组织资料传递更规范可控。",
+  "updatedAt": "2026-08-08",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云安全外链分享设置有效期与访问密码"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云安全外链分享"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云安全外链分享界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "分享方式", "value": "外链 / 受控外发"},
+    {"label": "访问保护", "value": "有效期 / 密码 / 下载策略"},
+    {"label": "链接管理", "value": "集中管理与一键回收"},
+    {"label": "操作记录", "value": "外发与访问全程留痕"}
+  ],
+  "badges": ["安全能力", "客户交付"],
+  "content": {
+    "intro": "安全外链分享让企业无需通过邮件附件或第三方网盘传递文件。对外分享时可设置有效期、访问密码和下载策略，链接可集中管理与回收，客户交付与跨组织协作都更规范。",
+    "features": [
+      {"title": "有效期控制", "body": "链接到期自动失效，避免资料被长期访问。", "icon": "clock"},
+      {"title": "访问密码", "body": "为外链设置访问密码，只有授权对象才能查看。", "icon": "lock"},
+      {"title": "下载策略", "body": "可限制外发对象是否允许下载、转发或复制。", "icon": "download"}
+    ],
+    "advantages": [
+      {"title": "交付规范", "body": "客户交付、报价与方案传递走受控外链，格式统一、可追踪。"},
+      {"title": "边界可控", "body": "过期即失效、密码保护、可回收，资料不失控。"},
+      {"title": "留痕可查", "body": "外发与访问操作可记录，配合审计形成闭环。"}
+    ],
+    "scenarios": [
+      {"title": "客户报价交付", "body": "向客户发送带有效期的方案与报价链接，过期自动失效。"},
+      {"title": "供应商协作", "body": "跨组织传递图纸、规格与清单，限定访问范围。"},
+      {"title": "对外资料分发", "body": "发布会、渠道或行业资料通过受控外链统一分发。"}
+    ],
+    "faq": [
+      {"question": "外链可以设置过期时间吗？", "answer": "可以。支持设置有效期，到期后链接自动失效，也可随时手动回收。"},
+      {"question": "能限制外链接收者下载文件吗？", "answer": "能。可配置仅预览、禁止下载或禁止转发等下载策略。"}
+    ],
+    "downloads": ["yiliyun-security-manual"]
+  },
+  "seo": {
+    "title": "安全外链分享 | 一粒云",
+    "description": "对外分享文件可设置有效期、访问密码与下载策略，客户交付与跨组织协作更规范。",
+    "keywords": ["外链分享", "文件分享", "访问密码", "有效期", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

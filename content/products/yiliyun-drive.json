@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-drive",
+  "status": "published",
+  "title": "一粒云企业网盘",
+  "summary": "企业文件统一存储、团队共享与权限管理的一站式空间，让部门资料、个人文件和项目内容都沉淀在同一套可追溯的文件体系中。",
+  "updatedAt": "2026-08-12",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云企业网盘统一管理企业文件与权限"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云企业网盘移动端文件管理"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云企业网盘文件列表与上传界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "企业空间容量", "value": "支持弹性扩容"},
+    {"label": "多级目录", "value": "部门 / 项目 / 个人空间"},
+    {"label": "文件预览", "value": "文档、表格、演示与图片在线预览"},
+    {"label": "访问方式", "value": "Web / 桌面端 / 移动端"},
+    {"label": "数据加密", "value": "传输与存储双重加密"}
+  ],
+  "badges": ["核心产品", "即开即用", "企业级"],
+  "content": {
+    "intro": "一粒云企业网盘把个人、部门、项目与共享资料统一放进同一套企业文件体系，让存储、搜索、共享和权限管理在一个空间内完成，减少文件散落在个人电脑和聊天工具中带来的混乱。",
+    "features": [
+      {"title": "多级目录与空间", "body": "个人空间、部门空间、团队共享与项目目录分层管理，资料各归其位。", "icon": "folder"},
+      {"title": "全局搜索", "body": "按名称、类型、标签与最近使用快速定位文件，减少反复翻找。", "icon": "search"},
+      {"title": "在线预览", "body": "常见文档与图片无需下载即可查看，移动场景也能快速确认内容。", "icon": "eye"}
+    ],
+    "advantages": [
+      {"title": "统一入口", "body": "把多平台分散的资料收敛到一套体系，员工找文件更快、更少出错。"},
+      {"title": "权限到人", "body": "谁能看、能否下载、能否外发都清晰可控，重要资料边界清楚。"},
+      {"title": "持续沉淀", "body": "人员变化与项目交接时资料仍保留在企业空间，长期积累更可靠。"}
+    ],
+    "scenarios": [
+      {"title": "部门资料管理", "body": "把行政、财务、市场等部门资料统一归档，按需授权访问。"},
+      {"title": "跨团队协作", "body": "围绕项目建立共享空间，让多个团队在同一套文件上协作。"},
+      {"title": "企业知识沉淀", "body": "把经验文档、模板与流程资料集中管理，供团队随时取用。"}
+    ],
+    "faq": [
+      {"question": "企业网盘支持多大的存储容量？", "answer": "按套餐提供基础容量并支持弹性扩容，可根据团队人数和业务增长灵活调整。"},
+      {"question": "可以从手机访问企业文件吗？", "answer": "支持。提供 Web、桌面端与移动端访问，关键文件随时随地可取。"}
+    ],
+    "downloads": ["yiliyun-white-paper", "yiliyun-deploy-guide"]
+  },
+  "seo": {
+    "title": "一粒云企业网盘 | 一粒云",
+    "description": "企业文件统一存储、团队共享与权限管理的一站式企业网盘。",
+    "keywords": ["企业网盘", "文件管理", "团队共享", "权限管理", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

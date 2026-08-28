@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="{{links.home}}"><span class="footer-mark" aria-hidden="true">{{#if site.logo.src}}<img src="{{assetUrl site.logo.src}}" alt="" width="24" height="24">{{else}}未{{/if}}</span><span>{{site.shortName}}</span></a>
+      <p class="footer-copy">让知识成为团队每天都能使用的能力。</p>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:{{site.contact.phoneHref}}">{{{icon "phone"}}} {{site.contact.phone}}</a>
+      <a href="mailto:{{site.contact.email}}">{{{icon "mail"}}} {{site.contact.email}}</a>
+      {{#if site.contact.mapUrl}}<a href="{{site.contact.mapUrl}}">{{{icon "map-pin"}}} {{site.contact.address}}</a>{{else}}<span>{{{icon "map-pin"}}} {{site.contact.address}}</span>{{/if}}
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; {{site.year}} {{site.name}}</span>
+    <a href="{{links.faq}}">常见问题</a>
+  </div>
+</footer>

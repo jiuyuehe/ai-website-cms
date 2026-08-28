@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-data-security",
+  "status": "published",
+  "question": "一粒云企业网盘如何保障数据安全？",
+  "answer": "数据在传输与存储过程中均采用加密保护，并支持按组织、成员与文件设置精细访问权限。关键操作如下载、外发、删除均可记录，配合审计形成安全闭环。对于对数据边界要求更高的企业，还可选择私有化部署。",
+  "updatedAt": "2026-08-12",
+  "productIds": ["yiliyun-drive", "yiliyun-permission", "yiliyun-audit"]
+}

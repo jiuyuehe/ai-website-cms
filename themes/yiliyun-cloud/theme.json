@@ -1,0 +1,33 @@
+{
+  "id": "yiliyun-cloud",
+  "version": "1.0.0",
+  "themeApiVersion": 1,
+  "engine": ">=5.0.0 <6.0.0",
+  "design": {
+    "read": "SaaS 企业网盘官网，采用明亮的雾蓝背景与蓝色主强调色，卡片式布局与圆角营造轻盈可信的软件产品感，克制动效突出专业。",
+    "variance": 7,
+    "motion": 3,
+    "density": 4,
+    "mode": "auto",
+    "accent": "blue",
+    "radius": "rounded"
+  },
+  "templates": {
+    "home": "pages/home.hbs",
+    "pricingIndex": "pages/pricing-index.hbs",
+    "productsIndex": "pages/products-index.hbs",
+    "productDetail": "pages/product-detail.hbs",
+    "casesIndex": "pages/cases-index.hbs",
+    "caseDetail": "pages/case-detail.hbs",
+    "newsIndex": "pages/news-index.hbs",
+    "newsDetail": "pages/news-detail.hbs",
+    "downloadsIndex": "pages/downloads-index.hbs",
+    "faqIndex": "pages/faq-index.hbs",
+    "notFound": "pages/not-found.hbs"
+  },
+  "assets": {
+    "styles": ["css/site.css"],
+    "scripts": []
+  },
+  "requiredHelpers": ["assetUrl", "date", "icon", "jsonLd", "renderBlocks", "seoHead"]
+}

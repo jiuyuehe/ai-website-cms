@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-ai-preview",
+  "status": "published",
+  "title": "AI 能力前瞻：让企业资料从「存起来」到「用起来」",
+  "summary": "未来的企业网盘，不只是文件的家，更是企业知识被真正使用的起点。",
+  "updatedAt": "2026-08-05",
+  "publishedAt": "2026-08-05",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云 AI 能力前瞻：从资料存储到知识使用"},
+  "blocks": [
+    {"type": "paragraph", "text": "当企业文件被妥善整理、权限清晰、归档有序之后，下一步是让这些资料真正被「用起来」。我们正在规划把 AI 能力接入企业文件体系。"},
+    {"type": "heading", "level": 2, "text": "AI 智脑：让资料回答问题"},
+    {"type": "paragraph", "text": "基于企业内部经过授权的资料，提供知识问答、内容总结与工作辅助，让团队在需要时快速找到答案，而不是翻遍文件夹。"},
+    {"type": "heading", "level": 2, "text": "智能问数：让资料直接支撑决策"},
+    {"type": "paragraph", "text": "未来，连接业务数据、知识与工具，让企业从「找资料」走向「直接完成工作」。我们会先从最清晰的场景开始逐步落地。"},
+    {"type": "quote", "text": "AI 的价值，在于让企业沉淀的资料在关键时刻真正被用起来。", "attribution": "一粒云研发团队"}
+  ],
+  "seo": {
+    "title": "AI 能力前瞻：让企业资料从存起来到用起来 | 一粒云",
+    "description": "了解一粒云企业网盘未来如何通过 AI 让企业知识被真正使用。",
+    "keywords": ["AI", "企业网盘", "知识管理", "产品前瞻", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

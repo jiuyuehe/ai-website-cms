@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Handheld night-vision optic over a city</title>
+  <desc id="desc">An original editorial illustration of a cylindrical handheld optic with a cool blue city at night.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#060916"/><stop offset=".6" stop-color="#0b2944"/><stop offset="1" stop-color="#02040b"/></linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3c4659"/><stop offset=".38" stop-color="#0e1119"/><stop offset="1" stop-color="#05060a"/></linearGradient>
+    <radialGradient id="glass"><stop stop-color="#e3f6ff"/><stop offset=".12" stop-color="#3acbff"/><stop offset=".38" stop-color="#132d51"/><stop offset="1" stop-color="#04070f"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <g opacity=".7" fill="#071323">
+    <path d="M0 770V590h110v180h62V482h98v288h76V542h114v228h64V420h124v350h78V570h140v200h76V500h160v270H0z"/>
+    <path d="M0 830h1920v250H0z"/>
+  </g>
+  <g fill="#3dd9ff" opacity=".55"><circle cx="92" cy="670" r="7"/><circle cx="262" cy="600" r="6"/><circle cx="500" cy="650" r="5"/><circle cx="814" cy="584" r="7"/><circle cx="986" cy="680" r="4"/></g>
+  <path d="M0 866c280-72 515-72 776 0 270 74 526 68 818-8 125-32 226-38 326-8v230H0z" fill="#02040a"/>
+  <g transform="translate(900 320) rotate(-8 470 210)">
+    <ellipse cx="520" cy="382" rx="470" ry="50" fill="#000" opacity=".45"/>
+    <path d="M110 120h744c92 0 154 73 154 158s-62 158-154 158H110c-80 0-125-67-125-158S30 120 110 120z" fill="url(#body)" stroke="#6e798d" stroke-width="9"/>
+    <path d="M85 153h690c56 0 96 44 96 125s-40 125-96 125H85z" fill="#11151f"/>
+    <path d="M60 136h125v284H60z" fill="#262f40" stroke="#7d899f" stroke-width="6"/>
+    <path d="M8 148h102v260H8z" fill="#080a11" stroke="#495467" stroke-width="7"/>
+    <ellipse cx="-6" cy="278" rx="74" ry="132" fill="#151b27" stroke="#7e899f" stroke-width="8"/>
+    <ellipse cx="-23" cy="278" rx="56" ry="104" fill="#04060b" stroke="#34445f" stroke-width="8"/>
+    <ellipse cx="-35" cy="278" rx="40" ry="78" fill="url(#glass)"/><circle cx="-48" cy="250" r="13" fill="#fff" opacity=".65"/>
+    <path d="M230 126v54h332v-54M230 420v-54h332v54" fill="none" stroke="#707b91" stroke-width="5" opacity=".6"/>
+    <circle cx="748" cy="278" r="37" fill="#252d3c" stroke="#7b8599" stroke-width="6"/><circle cx="748" cy="278" r="20" fill="#0a0d14"/>
+    <path d="M572 128h72v300h-72z" fill="#151b28" stroke="#667188" stroke-width="5"/><circle cx="608" cy="165" r="11" fill="#9b8cff"/>
+  </g>
+</svg>

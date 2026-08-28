@@ -1,0 +1,8 @@
+{{> partials/page-head}}
+<body class="page-list page-products">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">产品</span></nav><p class="eyebrow">产品</p><h1>面向企业文件协作的产品</h1><p>从存储、共享到权限与安全，为团队提供统一可控的文件协作能力。</p></div></section>
+    <section class="section"><div class="container"><div class="product-grid">{{#each page.items}}{{> partials/product-card}}{{/each}}</div></div></section>
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

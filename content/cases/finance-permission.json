@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-permission",
+  "status": "published",
+  "title": "金融机构文档权限与审计管控",
+  "summary": "对敏感的财务与客户资料设置精细访问权限，关键操作全程留痕，满足行业合规与内部风控要求。",
+  "updatedAt": "2026-08-06",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "金融机构通过权限管控中心保护敏感文档并保留审计记录"},
+  "customer": "某区域性城商行",
+  "challenge": "财务报表、客户资料与合规文档对访问权限要求极高，过去权限分散、缺少统一管控，关键操作无法留痕，难以满足监管对数据访问可追溯的要求。",
+  "solution": "部署权限管控中心与审计归档，按组织与文件设置精细访问边界，限制敏感资料的下载与外发；关键操作全部留痕，并接入审批流程形成闭环。",
+  "results": [
+    "敏感文档访问权限统一、边界清晰",
+    "关键操作全程留痕，满足合规审计要求",
+    "审批与归档衔接，数据治理更系统"
+  ],
+  "productIds": ["yiliyun-permission", "yiliyun-audit", "yiliyun-drive"],
+  "seo": {
+    "title": "金融机构文档权限审计案例 | 一粒云",
+    "description": "了解一粒云如何帮助金融机构实现文档权限管控与审计留痕。",
+    "keywords": ["金融机构", "权限管控", "审计", "合规", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "pharma-compliance",
+  "status": "published",
+  "title": "医药企业合规归档",
+  "summary": "把 GMP 相关的质量文档、批次记录与审批材料统一归档留痕，让数据管理与合规审计更系统、更可靠。",
+  "updatedAt": "2026-08-02",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "医药企业通过归档与审计管理质量文档与批次记录"},
+  "customer": "某生物制药企业",
+  "challenge": "GMP 相关文档、批次记录与审批材料数量庞大，且对版本、权限与留存有严格要求。过去资料分散、归档不及时，审计时难以快速完整地出具材料。",
+  "solution": "建立符合规范的目录归档体系，用版本管理与权限管控保护质量文档；关键操作全程留痕并接入审批，配合归档策略让每一份材料长期可查。",
+  "results": [
+    "质量文档归档及时、版本可追溯",
+    "审计材料完整可查，出具效率提升",
+    "权限与留痕满足 GMP 数据管理要求"
+  ],
+  "productIds": ["yiliyun-audit", "yiliyun-version", "yiliyun-permission"],
+  "seo": {
+    "title": "医药企业合规归档案例 | 一粒云",
+    "description": "了解一粒云如何帮助医药企业实现合规文档归档与审计留痕。",
+    "keywords": ["医药企业", "合规归档", "GMP", "审计", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

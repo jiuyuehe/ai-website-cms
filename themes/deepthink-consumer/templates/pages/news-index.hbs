@@ -1,0 +1,7 @@
+{{> partials/page-head}}
+<body class="page-list page-news">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main"><section class="page-hero"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">媒体</span></nav><p class="dt-eyebrow dt-eyebrow-dark">MEDIA / 04</p><h1>持续记录真实现场</h1><p>记录产品如何进入真实环境，也记录每一次观察带来的改进。</p></div></section><section class="dt-section"><div class="dt-container"><div class="dt-media-list news-list-large">{{#each page.items}}<a class="dt-media-row" href="{{href}}"><time datetime="{{publishedAt}}">{{date publishedAt}}</time><strong>{{title}}</strong><span>{{summary}}</span>{{{icon "arrow-up-right"}}}</a>{{/each}}</div></div></section></main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

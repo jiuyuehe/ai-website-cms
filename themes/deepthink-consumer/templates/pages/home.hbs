@@ -1,0 +1,109 @@
+{{> partials/page-head}}
+<body class="page-home">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main">
+    <section class="dt-hero" data-hero-slider tabindex="0" aria-roledescription="carousel" aria-label="{{site.name}}精选产品">
+      {{#each page.hero.slides}}
+        <article class="dt-hero-slide{{#if @first}} is-active{{/if}}" data-hero-slide data-carousel-slide data-autoplay-ms="{{autoplayMs}}" aria-hidden="{{#unless @first}}true{{else}}false{{/unless}}">
+          <div class="dt-hero-media"><img src="{{assetUrl media.src}}" alt="{{media.alt}}" width="1920" height="1080"{{#if @first}} fetchpriority="high"{{else}} loading="lazy"{{/if}}></div>
+          <div class="dt-hero-scrim" aria-hidden="true"></div>
+          <div class="dt-container dt-hero-content">
+            <p class="dt-eyebrow">{{eyebrow}}</p>
+            {{#if @first}}<h1>{{title}}</h1>{{else}}<h2>{{title}}</h2>{{/if}}
+            <p class="dt-hero-summary">{{summary}}</p>
+            {{#if actions}}
+              <div class="dt-hero-actions">
+                {{#each actions}}
+                  <a class="dt-button{{#unless @first}} dt-button-quiet{{/unless}}" href="{{href}}">{{label}} {{{icon "arrow-up-right"}}}</a>
+                {{/each}}
+              </div>
+            {{/if}}
+          </div>
+          <div class="dt-container dt-hero-meta"><span>{{id}}</span><span>LOW-LIGHT / FIELD READY</span></div>
+        </article>
+      {{/each}}
+      <div class="dt-container dt-hero-controls">
+        <div class="dt-hero-dots" role="group" aria-label="切换精选产品">
+          {{#each page.hero.slides}}
+            <button type="button" class="dt-hero-dot{{#if @first}} is-active{{/if}}" data-hero-dot aria-label="显示 {{title}}" aria-current="{{#if @first}}true{{else}}false{{/if}}"></button>
+          {{/each}}
+        </div>
+        <span class="dt-hero-hint">按左右方向键浏览</span>
+      </div>
+    </section>
+
+    <section class="dt-intro dt-section">
+      <div class="dt-container dt-intro-grid">
+        <div>
+          <p class="dt-eyebrow dt-eyebrow-dark">DEEPTHINK / LOW-LIGHT VISION</p>
+          <h2>{{page.intro.title}}</h2>
+        </div>
+        <div class="dt-intro-copy">
+          <p>{{page.intro.body}}</p>
+          <div class="dt-capability-list">
+            {{#each page.capabilities}}
+              <article class="dt-capability"><span class="dt-capability-index">0{{@index}}</span><div><h3>{{title}}</h3><p>{{body}}</p></div></article>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dt-technology dt-section" id="technology">
+      <div class="dt-container">
+        <div class="dt-section-heading">
+          <p class="dt-eyebrow">TECHNOLOGY / 01</p>
+          {{#if page.sectionHeadings.technology}}<h2>{{page.sectionHeadings.technology.title}}</h2><p>{{page.sectionHeadings.technology.body}}</p>{{else}}<h2>在微光中保留判断</h2><p>从低照度成像到边缘处理，把看见变成现场可以使用的判断。</p>{{/if}}
+        </div>
+        <div class="dt-tech-grid">
+          <article class="dt-tech-card dt-tech-card-dark"><div class="dt-tech-card-top"><span>0.0001</span><small>lux</small></div><h3>极低照度</h3><p>在接近无光的现场保留目标轮廓与层次。</p><img src="{{assetUrl 'media/deepthink/tech-dark.svg'}}" alt="低照度成像抽象示意" loading="lazy" width="720" height="480"></article>
+          <article class="dt-tech-card dt-tech-card-mid"><div class="dt-tech-card-top"><span>0.001</span><small>lux</small></div><h3>实时全彩</h3><p>让移动目标和环境色彩进入快速判断范围。</p><img src="{{assetUrl 'media/deepthink/tech-color.svg'}}" alt="实时全彩成像抽象示意" loading="lazy" width="720" height="480"></article>
+          <article class="dt-tech-card dt-tech-card-light"><div class="dt-tech-card-top"><span>0.1</span><small>lux</small></div><h3>稳定输出</h3><p>以低延迟和稳定结构支持连续观察与记录。</p><div class="dt-tech-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dt-products dt-section" id="products">
+      <div class="dt-container">
+        <div class="dt-section-heading dt-section-heading-row">
+          <div><p class="dt-eyebrow">PRODUCTS / 02</p>{{#if page.sectionHeadings.products}}<h2>{{page.sectionHeadings.products.title}}</h2><p>{{page.sectionHeadings.products.body}}</p>{{else}}<h2>为不同距离设计的夜视产品</h2><p>从挂载设备到手持观察，保持稳定、清晰和可移动的使用体验。</p>{{/if}}</div>
+          <a class="dt-text-link" href="{{links.products}}">查看全部 {{{icon "arrow-up-right"}}}</a>
+        </div>
+        <div class="dt-product-grid">{{#each page.products}}{{> partials/product-card}}{{/each}}</div>
+      </div>
+    </section>
+
+    <section class="dt-scenarios dt-section" id="scenarios">
+      <div class="dt-container">
+        <div class="dt-section-heading">
+          <p class="dt-eyebrow">SCENARIOS / 03</p>
+          {{#if page.sectionHeadings.scenarios}}<h2>{{page.sectionHeadings.scenarios.title}}</h2><p>{{page.sectionHeadings.scenarios.body}}</p>{{else}}<h2>让现场看见下一步</h2><p>面向巡检、搜救、消防和海上作业等需要快速确认的环境。</p>{{/if}}
+        </div>
+        <div class="dt-scenario-rail">{{#each page.cases}}{{> partials/case-card}}{{/each}}</div>
+      </div>
+    </section>
+
+    <section class="dt-media-section dt-section" id="media">
+      <div class="dt-container">
+        <div class="dt-section-heading dt-section-heading-row">
+          <div><p class="dt-eyebrow">MEDIA / 04</p>{{#if page.sectionHeadings.media}}<h2>{{page.sectionHeadings.media.title}}</h2><p>{{page.sectionHeadings.media.body}}</p>{{else}}<h2>持续记录真实现场</h2><p>记录产品如何进入真实环境，也记录每一次观察带来的改进。</p>{{/if}}</div>
+          <a class="dt-text-link" href="{{links.news}}">查看全部 {{{icon "arrow-up-right"}}}</a>
+        </div>
+        <div class="dt-media-list">
+          {{#each page.news}}
+            <a class="dt-media-row" href="{{href}}"><time datetime="{{publishedAt}}">{{date publishedAt}}</time><strong>{{title}}</strong><span>{{summary}}</span>{{{icon "arrow-up-right"}}}</a>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="dt-contact" id="contact">
+      <div class="dt-container dt-contact-grid">
+        <div><p class="dt-eyebrow dt-eyebrow-light">CONTACT / 05</p>{{#if page.sectionHeadings.contact}}<h2>{{page.sectionHeadings.contact.title}}</h2>{{else}}<h2>让世界少一些看不清的角落</h2>{{/if}}</div>
+        <div><p>{{#if page.sectionHeadings.contact}}{{page.sectionHeadings.contact.body}}{{else}}如果你正在面对复杂光线和远距离判断问题，可以从一个清晰的现场开始交流。{{/if}}</p><a class="dt-button dt-button-light" href="mailto:{{site.contact.email}}">联系团队 {{{icon "arrow-up-right"}}}</a></div>
+      </div>
+    </section>
+  </main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

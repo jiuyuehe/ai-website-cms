@@ -1,0 +1,8 @@
+{{> partials/page-head}}
+<body class="page-list page-cases">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">应用场景</span></nav><p class="eyebrow">应用场景</p><h1>不同团队如何用文件协作</h1><p>从部门共享到跨团队协作，看企业如何把资料变成可追溯的数字资产。</p></div></section>
+    <section class="section"><div class="container"><div class="case-feature-grid">{{#each page.items}}{{> partials/case-card}}{{/each}}</div></div></section>
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

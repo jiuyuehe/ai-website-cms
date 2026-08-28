@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-demo",
+  "status": "published",
+  "question": "可以先试用或安排演示吗？",
+  "answer": "可以。我们提供免费试用和在线演示两种方式。你可以先试用免费版体验基础企业网盘能力，也可以联系团队根据企业规模与使用场景安排专属演示，我们会从最合适的切入点开始。",
+  "updatedAt": "2026-08-08",
+  "productIds": ["yiliyun-drive", "yiliyun-team"]
+}

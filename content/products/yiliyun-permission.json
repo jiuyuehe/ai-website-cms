@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-permission",
+  "status": "published",
+  "title": "权限管控中心",
+  "summary": "按组织、成员与文件设置精细访问边界，重要资料可限制下载、外发与打印，让内部访问与外部分享全程可控。",
+  "updatedAt": "2026-08-10",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云权限管控中心按成员与文件设置访问边界"},
+  "mobileCover": {"src": "media/yiliyun/hero.png", "alt": "一粒云权限管控中心"},
+  "gallery": [
+    {"src": "media/yiliyun/hero.png", "alt": "一粒云权限管控中心界面"}
+  ],
+  "purchaseAction": {"label": "预约演示", "route": "mailto:hello@yiliyun.example"},
+  "secondaryAction": {"label": "查看应用场景", "route": "cases/index.html"},
+  "specifications": [
+    {"label": "权限粒度", "value": "组织 / 成员 / 文件三级"},
+    {"label": "操作限制", "value": "下载 / 外发 / 打印 / 复制"},
+    {"label": "身份体系", "value": "支持企业组织架构同步"},
+    {"label": "审计日志", "value": "关键操作全程记录"}
+  ],
+  "badges": ["安全能力", "权限到人"],
+  "content": {
+    "intro": "权限管控中心把文件访问从“能看不能说”变成可精细设置的边界。无论内部协作还是外部分享，都能按角色和成员设置访问、下载与操作范围，让数据安全可落地、可审计。",
+    "features": [
+      {"title": "组织级授权", "body": "跟随企业组织架构批量设置权限，减少逐人配置的工作量。", "icon": "users"},
+      {"title": "文件级策略", "body": "对单个文件或目录设置访问、下载与外发策略，边界精确。", "icon": "shield-check"},
+      {"title": "操作审计", "body": "关键操作如下载、外发、删除均可记录，问题可追溯。", "icon": "file-clock"}
+    ],
+    "advantages": [
+      {"title": "边界清晰", "body": "谁能看、能否下载、能否外发一目了然，减少越权访问风险。"},
+      {"title": "审计闭环", "body": "关键操作留痕，配合流程审批形成完整的安全闭环。"},
+      {"title": "随组织调整", "body": "人员入职、离职与转岗时权限自动调整，权限不随人走。"}
+    ],
+    "scenarios": [
+      {"title": "重要资料管控", "body": "对财务、法务、人事等敏感资料设置严格的访问与下载边界。"},
+      {"title": "外包与合作伙伴", "body": "对外部协作者限定可访问范围，防止资料扩散。"},
+      {"title": "合规审计", "body": "为满足行业合规要求，保留关键操作的可审计记录。"}
+    ],
+    "faq": [
+      {"question": "权限可以按成员单独设置吗？", "answer": "可以。支持组织级、成员级与文件级三级授权，可组合使用。"},
+      {"question": "能限制文件被下载和转发吗？", "answer": "能。可对文件设置下载、外发、打印与复制限制，并对关键操作留痕。"}
+    ],
+    "downloads": ["yiliyun-security-manual"]
+  },
+  "seo": {
+    "title": "权限管控中心 | 一粒云",
+    "description": "按组织、成员与文件设置精细访问边界，让企业文件访问与分享全程可控。",
+    "keywords": ["权限管理", "文件安全", "访问控制", "审计", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

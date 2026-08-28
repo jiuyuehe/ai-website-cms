@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-deploy-guide",
+  "status": "published",
+  "title": "私有化部署指南",
+  "description": "面向对数据边界与网络环境有更高要求的企业，介绍一粒云私有化部署的架构、步骤与实施建议。",
+  "file": "downloads/yiliyun-deploy-guide.txt",
+  "updatedAt": "2026-08-06",
+  "productIds": ["yiliyun-drive", "yiliyun-audit"]
+}

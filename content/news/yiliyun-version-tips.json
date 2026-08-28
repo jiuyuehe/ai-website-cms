@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "yiliyun-version-tips",
+  "status": "published",
+  "title": "版本管理这样用，告别「最终版_v8」",
+  "summary": "用好版本管理，让团队围绕最新版本协作，误改误删都有历史兜底。",
+  "updatedAt": "2026-08-01",
+  "publishedAt": "2026-08-01",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "一粒云版本管理帮助团队告别多版本命名混乱"},
+  "blocks": [
+    {"type": "paragraph", "text": "「最终版_v5」「最终版_v8」式的命名，其实是协作没对齐的体现。用好版本管理，可以让团队真正围绕最新版本工作。"},
+    {"type": "heading", "level": 2, "text": "让系统记住版本，而不是靠命名"},
+    {"type": "paragraph", "text": "文件每次更新自动保留历史版本，误改误删都能安全回退。团队不必再纠结文件名，谁在什么时间改了什么都一目了然。"},
+    {"type": "list", "items": ["高频修改的文档开启版本管理", "更新时补充简短说明，方便回溯", "发现误改立即回到上一版本", "配合回收站，误删也能恢复"]},
+    {"type": "quote", "text": "好的版本管理，让协作不必靠小心谨慎来兜底。", "attribution": "一粒云产品团队"}
+  ],
+  "seo": {
+    "title": "版本管理这样用，告别最终版_v8 | 一粒云",
+    "description": "用好版本管理，让团队围绕最新版本协作，误改误删都有历史兜底。",
+    "keywords": ["版本管理", "文件协作", "历史版本", "使用技巧", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}

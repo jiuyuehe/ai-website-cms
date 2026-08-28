@@ -1,0 +1,32 @@
+{
+  "id": "deepthink-consumer",
+  "version": "1.0.0",
+  "themeApiVersion": 1,
+  "engine": ">=5.0.0 <6.0.0",
+  "design": {
+    "read": "低照度成像企业官网，使用深海军蓝、紫蓝强调色、编辑式留白与克制的现场技术叙事。",
+    "variance": 7,
+    "motion": 3,
+    "density": 4,
+    "mode": "auto",
+    "accent": "violet-blue",
+    "radius": "compact"
+  },
+  "templates": {
+    "home": "pages/home.hbs",
+    "productsIndex": "pages/products-index.hbs",
+    "productDetail": "pages/product-detail.hbs",
+    "casesIndex": "pages/cases-index.hbs",
+    "caseDetail": "pages/case-detail.hbs",
+    "newsIndex": "pages/news-index.hbs",
+    "newsDetail": "pages/news-detail.hbs",
+    "downloadsIndex": "pages/downloads-index.hbs",
+    "faqIndex": "pages/faq-index.hbs",
+    "notFound": "pages/not-found.hbs"
+  },
+  "assets": {
+    "styles": ["css/site.css"],
+    "scripts": ["js/theme.js"]
+  },
+  "requiredHelpers": ["addOne", "assetUrl", "date", "icon", "jsonLd", "renderBlocks", "seoHead"]
+}

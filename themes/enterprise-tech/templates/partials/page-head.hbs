@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{{site.language}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{theme.metaThemeColors.light}}">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{theme.metaThemeColors.dark}}">
+  {{{seoHead page}}}
+  {{#if page.hero.image}}<link rel="preload" as="image" href="{{assetUrl page.hero.image}}" fetchpriority="high">{{/if}}
+  {{#each theme.styles}}<link rel="stylesheet" href="{{this}}">{{/each}}
+</head>

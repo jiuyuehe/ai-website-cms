@@ -1,0 +1,9 @@
+{
+  "$schema": "./schemas/project.schema.json",
+  "theme": "yiliyun-cloud",
+  "contentDir": "content",
+  "themesDir": "themes",
+  "publicDir": "public",
+  "outputDir": "dist",
+  "cacheDir": ".ai-cms"
+}

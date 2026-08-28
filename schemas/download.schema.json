@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "id", "status", "title", "description", "file", "updatedAt", "productIds"],
+  "properties": {"schemaVersion": {"const": 1}, "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "status": {"enum": ["draft", "published"]}, "title": {"type": "string"}, "description": {"type": "string"}, "file": {"type": "string", "pattern": "^[a-zA-Z0-9/_-]+\\.[a-zA-Z0-9]+$"}, "updatedAt": {"type": "string", "format": "date"}, "productIds": {"type": "array", "items": {"type": "string"}}}
+}

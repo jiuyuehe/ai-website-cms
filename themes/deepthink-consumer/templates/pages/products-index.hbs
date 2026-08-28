@@ -1,0 +1,10 @@
+{{> partials/page-head}}
+<body class="page-list page-products">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  {{> partials/header}}
+  <main id="main">
+    <section class="page-hero"><div class="dt-container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><span aria-current="page">产品</span></nav><p class="dt-eyebrow dt-eyebrow-dark">PRODUCTS / 02</p><h1>为不同距离设计的夜视产品</h1><p>从挂载设备到手持观察，保持稳定、清晰和可移动的使用体验。</p></div></section>
+    <section class="dt-section"><div class="dt-container"><div class="dt-product-grid">{{#each page.items}}{{> partials/product-card}}{{/each}}</div></div></section>
+  </main>
+  {{> partials/footer}}
+  {{> partials/page-foot}}

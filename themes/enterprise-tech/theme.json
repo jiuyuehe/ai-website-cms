@@ -1,0 +1,32 @@
+{
+  "id": "enterprise-tech",
+  "version": "1.0.0",
+  "themeApiVersion": 1,
+  "engine": ">=5.0.0 <6.0.0",
+  "design": {
+    "read": "B2B AI 官网面向企业 IT 与运营决策者，采用可信的系统化技术语言和克制的动效。",
+    "variance": 7,
+    "motion": 3,
+    "density": 4,
+    "mode": "auto",
+    "accent": "teal",
+    "radius": "compact"
+  },
+  "templates": {
+    "home": "pages/home.hbs",
+    "productsIndex": "pages/products-index.hbs",
+    "productDetail": "pages/product-detail.hbs",
+    "casesIndex": "pages/cases-index.hbs",
+    "caseDetail": "pages/case-detail.hbs",
+    "newsIndex": "pages/news-index.hbs",
+    "newsDetail": "pages/news-detail.hbs",
+    "downloadsIndex": "pages/downloads-index.hbs",
+    "faqIndex": "pages/faq-index.hbs",
+    "notFound": "pages/not-found.hbs"
+  },
+  "assets": {
+    "styles": ["css/site.css"],
+    "scripts": []
+  },
+  "requiredHelpers": ["assetUrl", "date", "icon", "jsonLd", "renderBlocks", "seoHead"]
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "name", "shortName", "description", "origin", "basePath", "language", "contact", "navigation", "seo"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "name": {"type": "string", "minLength": 2},
+    "shortName": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 10},
+    "origin": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "basePath": {"type": "string", "pattern": "^/", "maxLength": 120},
+    "language": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"},
+    "copyrightYear": {"type": "integer", "minimum": 2000, "maximum": 2200},
+    "logo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["alt"],
+      "properties": {
+        "src": {"type": "string"},
+        "alt": {"type": "string", "minLength": 1}
+      }
+    },
+    "favicon": {"type": "string", "minLength": 1},
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phone", "email", "address"],
+      "properties": {
+        "phone": {"type": "string", "minLength": 5},
+        "email": {"type": "string", "format": "email"},
+        "address": {"type": "string", "minLength": 2},
+        "mapUrl": {"type": "string", "format": "uri"}
+      }
+    },
+    "navigation": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/navigationItem"}
+    },
+    "utilityNavigation": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/navigationItem"}
+    },
+    "headerActions": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {"$ref": "#/$defs/action"}
+    },
+    "footerGroups": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/footerGroup"}
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description", "keywords"],
+      "properties": {
+        "title": {"type": "string", "minLength": 5, "maxLength": 120},
+        "description": {"type": "string", "minLength": 10, "maxLength": 320},
+        "keywords": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "image": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "internalRoute": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?:index\\.html|(?:pricing|products|cases|news|downloads|faq)/index\\.html)$"
+    },
+    "navigationItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "route"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "route": {"$ref": "#/$defs/internalRoute"},
+        "children": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {"$ref": "#/$defs/navigationItem"}
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "route"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "route": {"type": "string", "minLength": 1}
+      }
+    },
+    "footerGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "items"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {"$ref": "#/$defs/navigationItem"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<header class="dt-header">
+  <div class="dt-container dt-header-inner">
+    <a class="dt-brand" href="{{links.home}}" aria-label="{{site.name}}">
+      {{#if site.logo.src}}
+        <img src="{{assetUrl site.logo.src}}" alt="{{site.logo.alt}}" width="140" height="38">
+      {{else}}
+        <span class="dt-brand-wordmark">{{site.shortName}}</span>
+      {{/if}}
+    </a>
+
+    <nav class="dt-desktop-nav" aria-label="主导航">
+      {{#each site.navLinks}}
+        <span class="dt-nav-group"><a href="{{href}}"{{#if active}} aria-current="page"{{/if}}>{{label}}</a>{{#if children}}<span class="vivo-nav-submenu">{{#each children}}<a href="{{href}}">{{label}}</a>{{/each}}</span>{{/if}}</span>
+      {{/each}}
+    </nav>
+
+    <div class="dt-header-actions">
+      {{#if site.headerActions.[0]}}
+        <a class="dt-header-contact" href="{{site.headerActions.[0].href}}">{{site.headerActions.[0].label}} {{{icon "arrow-up-right"}}}</a>
+      {{/if}}
+      <details class="dt-menu">
+        <summary aria-label="打开导航菜单">{{{icon "menu"}}}<span>菜单</span></summary>
+        <div class="dt-menu-panel">
+          <nav aria-label="移动端主导航">
+            {{#each site.navLinks}}<a href="{{href}}"{{#if active}} aria-current="page"{{/if}}>{{label}} {{{icon "arrow-up-right"}}}</a>{{/each}}
+          </nav>
+          {{#if site.headerActions.[0]}}<a class="dt-menu-contact" href="{{site.headerActions.[0].href}}">{{site.headerActions.[0].label}} {{{icon "arrow-up-right"}}}</a>{{/if}}
+        </div>
+      </details>
+    </div>
+    <div class="dt-search-index" hidden aria-hidden="true">{{#each searchIndex}}<span data-search-item>{{typeLabel}} {{title}}</span>{{/each}}</div>
+  </div>
+</header>

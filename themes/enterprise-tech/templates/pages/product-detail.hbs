@@ -1,0 +1,12 @@
+{{> partials/page-head}}
+<body class="page-detail page-product-detail">
+  <a class="skip-link" href="#main">跳至主要内容</a>{{> partials/header}}
+  <main id="main">
+    <section class="detail-hero"><div class="container"><nav class="breadcrumbs" aria-label="面包屑"><a href="{{links.home}}">首页</a><span aria-hidden="true">/</span><a href="{{links.products}}">产品</a><span aria-hidden="true">/</span><span aria-current="page">{{page.item.title}}</span></nav><div class="detail-hero-grid"><div><p class="eyebrow">产品</p><h1>{{page.item.title}}</h1><p class="lead">{{page.item.summary}}</p><a class="button button-primary" href="{{links.contact}}">联系我们 {{{icon "arrow-right"}}}</a></div><figure class="detail-media"><img src="{{assetUrl page.item.cover.src}}" alt="{{page.item.cover.alt}}" width="1200" height="800" fetchpriority="high"></figure></div></div></section>
+    <section class="section"><div class="container reading-grid"><div class="section-heading"><p class="eyebrow">产品介绍</p><h2>让知识在需要时被准确使用</h2></div><p class="reading-copy">{{page.item.content.intro}}</p></div></section>
+    <section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">能力组成</p><h2>核心能力</h2></div><div class="item-grid item-grid-features">{{#each page.item.content.features}}<article class="item-block"><span class="icon-box" aria-hidden="true">{{{icon icon}}}</span><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    <section class="section"><div class="container split-section"><div class="section-heading"><p class="eyebrow">持续使用</p><h2>为什么适合长期使用</h2></div><div class="plain-list">{{#each page.item.content.advantages}}<article><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    <section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">落地场景</p><h2>适用场景</h2></div><div class="scenario-grid">{{#each page.item.content.scenarios}}<article><h3>{{title}}</h3><p>{{body}}</p></article>{{/each}}</div></div></section>
+    {{#if page.item.content.faq}}<section class="section"><div class="container reading-grid"><div class="section-heading"><p class="eyebrow">进一步了解</p><h2>常见问题</h2></div><div class="faq-list">{{#each page.item.content.faq}}<details><summary>{{question}}{{{icon "plus"}}}</summary><p>{{answer}}</p></details>{{/each}}</div></div></section>{{/if}}
+  </main>
+  {{> partials/footer}}{{> partials/page-foot}}

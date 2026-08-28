@@ -1,0 +1,17 @@
+<footer class="dt-footer">
+  <div class="dt-container dt-footer-top">
+    <div class="dt-footer-nav">
+      {{#each site.navLinks}}<a href="{{href}}">{{label}}</a>{{/each}}
+    </div>
+    <div class="dt-footer-contact">
+      <p>{{site.description}}</p>
+      <a href="tel:{{site.contact.phoneHref}}">{{{icon "phone"}}} {{site.contact.phone}}</a>
+      <a href="mailto:{{site.contact.email}}">{{{icon "mail"}}} {{site.contact.email}}</a>
+      <span>{{{icon "map-pin"}}} {{site.contact.address}}</span>
+    </div>
+  </div>
+  <div class="dt-container dt-footer-bottom">
+    <a class="dt-footer-wordmark" href="{{links.home}}">{{site.name}}</a>
+    <span>© {{site.year}} {{site.name}}</span>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "design-institute",
+  "status": "published",
+  "title": "设计院跨团队协作",
+  "summary": "多专业设计团队围绕项目共享图纸与文档，版本统一、协同透明，让跨专业协作更顺畅。",
+  "updatedAt": "2026-08-04",
+  "cover": {"src": "media/yiliyun/hero.png", "alt": "设计院多专业团队在共享空间中协同管理图纸"},
+  "customer": "某综合设计研究院",
+  "challenge": "建筑、结构、机电等多个专业围绕同一项目协同，图纸与文档多版本并存，专业之间传递信息频繁，常因版本不一致导致重复返工。",
+  "solution": "为每个项目建立协作空间，多专业团队统一共享最新图纸与文档；开启版本管理与文件评论，让每次更新可回溯、意见围绕文件沉淀。",
+  "results": [
+    "多专业围绕最新版本协作，返工明显减少",
+    "图纸版本脉络清晰，历史可随时回溯",
+    "专业间信息对齐更快，协同效率提升"
+  ],
+  "productIds": ["yiliyun-drive", "yiliyun-version", "yiliyun-team"],
+  "seo": {
+    "title": "设计院跨团队协作案例 | 一粒云",
+    "description": "了解一粒云如何帮助设计院多专业团队统一版本、顺畅协作。",
+    "keywords": ["设计院", "跨团队协作", "图纸管理", "版本管理", "一粒云"],
+    "image": "media/yiliyun/hero.png"
+  }
+}
